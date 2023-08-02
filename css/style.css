@@ -2726,29 +2726,19 @@ input[type="range"] {
   color: var(--btn-content-hover);
 }
 .info-card {
-  padding: 0 0 20px;
+  padding: 10px 0; /* 调整个人信息容器的上下内边距 */
   text-align: center;
 }
 .info-card .info {
   padding: 0 16px;
 }
 .info-card .avatar {
-  width: 100%;
-  height: auto; /* 让头像按照宽度自适应高度 */
+  width: 80px; /* 调整头像容器的宽度 */
+  height: 80px; /* 调整头像容器的高度 */
   border-radius: 50%; /* 将头像容器设置为圆形 */
-  margin-bottom: 16px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  position: relative;
+  margin-bottom: 10px; /* 调整头像容器的底部外边距 */
+  overflow: hidden; /* 确保头像在圆形容器内显示 */
+  display: inline-block; /* 将头像容器变为行内块元素 */
 }
 .info-card .avatar img {
   width: 100%;
