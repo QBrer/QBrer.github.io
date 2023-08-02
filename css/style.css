@@ -2734,7 +2734,8 @@ input[type="range"] {
 }
 .info-card .avatar {
   width: 100%;
-  border-radius: 16px;
+  height: auto; /* 让头像按照宽度自适应高度 */
+  border-radius: 50%; /* 将头像容器设置为圆形 */
   margin-bottom: 16px;
   -webkit-user-select: none;
   -moz-user-select: none;
