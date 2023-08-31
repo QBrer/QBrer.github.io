@@ -146,6 +146,11 @@
                 网页
                 <div class="category-count">1</div>
             </a>
+        
+            <a class="category-link" href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/">
+                服务器
+                <div class="category-count">1</div>
+            </a>
         </div>
     </div>
   </div>
@@ -156,7 +161,7 @@
   <div class="widget-wrap">
     <div class="widget">
       <h3 class="widget-title">标签</h3>
-      <ul class="widget-tag-list" itemprop="keywords"><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/%E7%BD%91%E9%A1%B5/" rel="tag">网页</a></li></ul>
+      <ul class="widget-tag-list" itemprop="keywords"><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/leancloud/" rel="tag">leancloud</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/valine/" rel="tag">valine</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/%E7%BD%91%E9%A1%B5/" rel="tag">网页</a></li></ul>
     </div>
   </div>
 
@@ -189,9 +194,9 @@
       <h3 class="widget-title">最新文章</h3>
       <ul>
         
-          <a class="recent-link" href="/2023/08/02/valine/" title="valine" >
+          <a class="recent-link" href="/2023/08/18/valine/" title="valine国内节点无法显示评论" >
             <div class="recent-link-text">
-              valine
+              valine国内节点无法显示评论
             </div>
           </a>
         
@@ -224,7 +229,7 @@
   
     
       <h1 itemprop="name">
-        <a class="p-name article-title" href="/2023/08/02/valine/">valine</a>
+        <a class="p-name article-title" href="/2023/08/18/valine/">valine国内节点无法显示评论</a>
       </h1>
     
   
@@ -232,26 +237,35 @@
 
         <div class='meta-info-bar'>
           <div class="meta-info">
-  <time class="dt-published" datetime="2023-08-02T09:04:02.000Z" itemprop="datePublished">2023-08-02</time>
+  <time class="dt-published" datetime="2023-08-18T09:04:02.000Z" itemprop="datePublished">2023-08-18</time>
 </div>
           <div class="need-seperator meta-info">
             <div class="meta-cate-flex">
   
-    未分类 
+  <a class="meta-cate-link" href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</a>
    
 </div>
   
           </div>
           <div class="wordcount need-seperator meta-info">
-            0 词 
+            368 词 
           </div>
         </div>
         
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/leancloud/" rel="tag">leancloud</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/valine/" rel="tag">valine</a></li></ul>
+
       </header>
       <div class="e-content article-entry" itemprop="articleBody">
         
           <div class="truncate-text">
-              
+            自己原先已经解决了这个问题，最近换了一个域名之后却忘了原先是怎么解决的了，导致又浪费了好长时间去找解决办法，现在记录下来，免得到时候又要一篇篇博客的找配置方法。
+原因valine作为一个完全纯前端的评论插件，通过leancloud来实现评论功能，而国际版的leancloud共享域名不再向中国大陆提供服务，这导致国内节点无法使用评论功能
+解决方法官方已给出了解决方法，就是绑定上自己的域名或者使用leancloud国内版（需要实名认证），感觉还是绑定域名稍微快点。
+进入leancloud国际版，设置-域名绑定-绑定新域名。官方这里是绑定二级域名,但不知道为啥我绑定之后没用，国内依旧无法使用评论，后来看csdn上一篇博客说要绑定三级域名，绑完确实可以用了，不是很懂。按照leancloud所给推荐配置域名解析：
+
+
+最后，进入自己博客主题配置文件更改valine的serverURLs
+  
           </div>
         
       </div>
@@ -262,7 +276,7 @@
      
     <a class="right-panel  non-pic  "
       
-      href="/2023/08/02/valine/" 
+      href="/2023/08/18/valine/" 
     >
        
       <i class="fa-solid fa-angle-right non-pic"></i>
