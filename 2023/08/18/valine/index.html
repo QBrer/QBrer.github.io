@@ -21,10 +21,11 @@
 <meta property="og:description" content="自己原先已经解决了这个问题，最近换了一个域名之后却忘了原先是怎么解决的了，导致又浪费了好长时间去找解决办法，现在记录下来，免得到时候又要一篇篇博客的找配置方法。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://qbrer.github.io/someimg/8311.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/QBrer/blog_img/main/img/8311.jpg">
 <meta property="og:image" content="https://qbrer.github.io/someimg/Snipaste_2023-08-31_16-27-11.png">
 <meta property="og:image" content="https://qbrer.github.io/someimg/Snipaste_2023-08-31_18-05-07.png">
 <meta property="article:published_time" content="2023-08-18T09:04:02.000Z">
-<meta property="article:modified_time" content="2023-10-12T09:58:48.645Z">
+<meta property="article:modified_time" content="2023-10-12T14:39:22.656Z">
 <meta property="article:author" content="QBrer">
 <meta property="article:tag" content="Valine">
 <meta property="article:tag" content="LeanCloud">
@@ -195,7 +196,7 @@
       
         <a class="archive-link" href="/archives/2023/10 ">
           十月 2023 
-          <div class="archive-count">2 </div>
+          <div class="archive-count">3 </div>
         </a>
       
         <a class="archive-link" href="/archives/2023/08 ">
@@ -224,6 +225,12 @@
       <h3 class="widget-title">最新文章</h3>
       <ul>
         
+          <a class="recent-link" href="/2023/10/12/hexo%E5%A4%9A%E8%AE%BE%E5%A4%87%E5%90%8C%E6%AD%A5%E6%9B%B4%E6%96%B0/" title="hexo多设备同步更新" >
+            <div class="recent-link-text">
+              hexo多设备同步更新
+            </div>
+          </a>
+        
           <a class="recent-link" href="/2023/10/12/git%E5%9F%BA%E7%A1%80%E6%8C%87%E4%BB%A4/" title="git基础指令" >
             <div class="recent-link-text">
               git基础指令
@@ -245,12 +252,6 @@
           <a class="recent-link" href="/2023/07/02/vue%E5%AD%A6%E4%B9%A0%E7%AC%AC1%E5%A4%A9/" title="vue入门第1天" >
             <div class="recent-link-text">
               vue入门第1天
-            </div>
-          </a>
-        
-          <a class="recent-link" href="/2023/06/02/Python%E5%AE%9E%E7%8E%B0%E8%BE%93%E5%87%BA%E6%96%87%E4%BB%B6%E5%90%8D/" title="Python实现批量输出文件名" >
-            <div class="recent-link-text">
-              Python实现批量输出文件名
             </div>
           </a>
         
@@ -309,6 +310,7 @@
           <p>自己原先已经解决了这个问题，最近换了一个域名之后却忘了原先是怎么解决的了，导致又浪费了好长时间去找解决办法，现在记录下来，免得到时候又要一篇篇博客的找配置方法。</p>
 <span id="more"></span>
 <h3 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h3><p>valine作为一个完全纯前端的评论插件，通过leancloud来实现评论功能，而国际版的leancloud共享域名不再向中国大陆提供服务，这导致国内节点无法使用评论功能<br><img src="/someimg/8311.jpg" style="zoom: 50%;" /></p>
+<p><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/img/8311.jpg"></p>
 <h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><p>官方已给出了解决方法，就是绑定上自己的域名或者使用leancloud国内版（需要实名认证），感觉还是绑定域名稍微快点。</p>
 <p>进入leancloud国际版，设置-域名绑定-绑定新域名。官方这里是绑定二级域名,但不知道为啥我绑定之后没用，国内依旧无法使用评论，后来看csdn上一篇博客说要绑定三级域名，绑完确实可以用了，不是很懂。按照leancloud所给推荐配置域名解析：</p>
 <img src="/someimg/Snipaste_2023-08-31_16-27-11.png" alt="1" style="zoom:80%;" />
