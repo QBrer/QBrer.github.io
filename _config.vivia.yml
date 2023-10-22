@@ -58,7 +58,7 @@ comment:
     enableOS: false
     appId: XiigNuiC5qAEMsvXgA4CZRdS-MdYXbMMI
     appKey: onmZNb4nJ2EpQ4jTIGroP5t5
-    placeholder: 目前国内节点是看不了评论也评论不了的，在改了在改了😥
+    placeholder: 暂未配置邮件提醒，不能及时回复还请见谅😥
     pageSize: 10
     highlight: true
     serverURLs: https://api.b.qbrer.me
