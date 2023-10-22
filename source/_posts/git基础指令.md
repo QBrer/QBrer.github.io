@@ -3,7 +3,7 @@ title: git相关指令
 date: 2023-8-12 19:59:30
 category:
 tags: git
-photos: https://raw.githubusercontent.com/QBrer/blog_img/main/img/202310221552237.png
+photos: https://raw.githubusercontent.com/QBrer/blog_img/main/img/202310221651595.png
 ---
 
 不得不说git的一些命令在多人协作项目时确实重要，这方面的东西的确要抽时间看看，现在用到啥记点啥。
@@ -53,8 +53,9 @@ git merge dev （--no-ff）(-m) //合并，把dev分支的工作成果合并到m
 ##### 代码回退相关
 
 ```
-git log                  //查看提交历史
+git log                  //查看提交历史，按q退出
 git log --pretty=oneline //git log的精简版，只显示commit id，提交历史较多时就很好用
-git revert -n commit id  //回退版本，之后commit，push即可
+git reset --hard commitid //回退版本，之后commit，push即可，回退版本后提交的全部作废
+git revert -n commitid  //回退版本，不同的是后面版本依旧存在
 ```
 
