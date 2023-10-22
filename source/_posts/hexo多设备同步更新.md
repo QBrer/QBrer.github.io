@@ -3,7 +3,7 @@ title: hexo多设备同步更新
 date: 2023-10-12 22:32:40
 category:
 tags: git
-photos:
+photos: https://raw.githubusercontent.com/QBrer/blog_img/main/img/202310132118356.png
 ---
 写博客这件事情老是坚持不下来，一方面确实是懒，还有很大一方面是两个设备轮流着用，hexo又是个纯静态框架，导致自己老是在一个设备写好.md文件，传到另一个设备再部署，实在是麻烦，最近抽时间总算是解决了这个问题，写博客也顺手了很多。
 <!-- more -->
