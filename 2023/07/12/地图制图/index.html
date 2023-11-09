@@ -11,14 +11,14 @@
   <meta charset="utf-8">
   
   
-  <title>QBrer的烂笔头</title>
+  <title>数据库语法字典 | QBrer的烂笔头</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="一、数据准备1.导入4张dem图像 2.dem数据合并数据管理工具→栅格→镶嵌至新栅格  合并之后的图像如下：  3.数据裁剪：获取河南数据导入数据CHN_adm1，打开属性表，选择河南那一栏属性，数据→导出数据   数据管理工具→栅格→栅格处理→裁剪  结果如下图所示：  二、DEM应用之坡度：Slop1.坡度表示3d analyst工具→栅格表面→坡度   2.根据需要更改符号系统 3.添加比">
+  <meta name="description" content="一、数据准备1.导入4张dem图像 2.dem数据合并数据管理工具→栅格→镶嵌至新栅格  合并之后的图像如下：  3.数据裁剪：获取河南数据导入数据CHN_adm1，打开属性表，选择河南那一栏属性，数据→导出数据   数据管理工具→栅格→栅格处理→裁剪  结果如下图所示：  二、DEM应用之坡度：Slop1.坡度表示3d analyst工具→栅格表面→坡度   2.根据需要更改符号系统 3.添加">
 <meta property="og:type" content="article">
-<meta property="og:title" content="QBrer的烂笔头">
-<meta property="og:url" content="https://qbrer.github.io/2023/11/09/%E5%9C%B0%E5%9B%BE%E5%88%B6%E5%9B%BE/index.html">
+<meta property="og:title" content="数据库语法字典">
+<meta property="og:url" content="https://qbrer.github.io/2023/07/12/%E5%9C%B0%E5%9B%BE%E5%88%B6%E5%9B%BE/index.html">
 <meta property="og:site_name" content="QBrer的烂笔头">
-<meta property="og:description" content="一、数据准备1.导入4张dem图像 2.dem数据合并数据管理工具→栅格→镶嵌至新栅格  合并之后的图像如下：  3.数据裁剪：获取河南数据导入数据CHN_adm1，打开属性表，选择河南那一栏属性，数据→导出数据   数据管理工具→栅格→栅格处理→裁剪  结果如下图所示：  二、DEM应用之坡度：Slop1.坡度表示3d analyst工具→栅格表面→坡度   2.根据需要更改符号系统 3.添加比">
+<meta property="og:description" content="一、数据准备1.导入4张dem图像 2.dem数据合并数据管理工具→栅格→镶嵌至新栅格  合并之后的图像如下：  3.数据裁剪：获取河南数据导入数据CHN_adm1，打开属性表，选择河南那一栏属性，数据→导出数据   数据管理工具→栅格→栅格处理→裁剪  结果如下图所示：  二、DEM应用之坡度：Slop1.坡度表示3d analyst工具→栅格表面→坡度   2.根据需要更改符号系统 3.添加">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://raw.githubusercontent.com/QBrer/blog_img/main/202310301450417.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/QBrer/blog_img/main/202310301454798.png">
@@ -45,9 +45,10 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/QBrer/blog_img/main/202311061400548.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/QBrer/blog_img/main/202311061401663.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/QBrer/blog_img/main/202311061408216.png">
-<meta property="article:published_time" content="2023-11-09T11:45:40.551Z">
-<meta property="article:modified_time" content="2023-11-09T11:45:06.225Z">
+<meta property="article:published_time" content="2023-07-12T10:22:19.000Z">
+<meta property="article:modified_time" content="2023-11-09T11:50:56.798Z">
 <meta property="article:author" content="QBrer">
+<meta property="article:tag" content="sql语句">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/QBrer/blog_img/main/202310301450417.png">
   
@@ -198,11 +199,6 @@
       <h3 class="widget-title">归档</h3>
       
       
-        <a class="archive-link" href="/archives/2023/11 ">
-          十一月 2023 
-          <div class="archive-count">1 </div>
-        </a>
-      
         <a class="archive-link" href="/archives/2023/10 ">
           十月 2023 
           <div class="archive-count">2 </div>
@@ -215,7 +211,7 @@
       
         <a class="archive-link" href="/archives/2023/07 ">
           七月 2023 
-          <div class="archive-count">2 </div>
+          <div class="archive-count">3 </div>
         </a>
       
         <a class="archive-link" href="/archives/2023/06 ">
@@ -233,12 +229,6 @@
     <div class="widget">
       <h3 class="widget-title">最新文章</h3>
       <ul>
-        
-          <a class="recent-link" href="/2023/11/09/%E5%9C%B0%E5%9B%BE%E5%88%B6%E5%9B%BE/" title="" >
-            <div class="recent-link-text">
-              (no title)
-            </div>
-          </a>
         
           <a class="recent-link" href="/2023/10/16/picgo-github%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BA%8A/" title="picgo+github创建图床并在typora上使用" >
             <div class="recent-link-text">
@@ -261,6 +251,12 @@
           <a class="recent-link" href="/2023/08/12/git%E5%9F%BA%E7%A1%80%E6%8C%87%E4%BB%A4/" title="git相关指令" >
             <div class="recent-link-text">
               git相关指令
+            </div>
+          </a>
+        
+          <a class="recent-link" href="/2023/07/12/%E5%9C%B0%E5%9B%BE%E5%88%B6%E5%9B%BE/" title="数据库语法字典" >
+            <div class="recent-link-text">
+              数据库语法字典
             </div>
           </a>
         
@@ -288,7 +284,7 @@
   
     
       <h1 class="p-name article-title" itemprop="headline name">
-        无标题
+        数据库语法字典
       </h1>
     
   
@@ -296,25 +292,28 @@
 
         <div class='meta-info-bar'>
           <div class="meta-info">
-  <time class="dt-published" datetime="2023-11-09T11:45:40.551Z" itemprop="datePublished">2023-11-09</time>
+  <time class="dt-published" datetime="2023-07-12T10:22:19.000Z" itemprop="datePublished">2023-07-12</time>
 </div>
           <div class="need-seperator meta-info">
             <div class="meta-cate-flex">
   
-    未分类 
+  <a class="meta-cate-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a>
    
 </div>
   
           </div>
           <div class="wordcount need-seperator meta-info">
-            518 词 
+            519 词 
           </div>
         </div>
         
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/sql%E8%AF%AD%E5%8F%A5/" rel="tag">sql语句</a></li></ul>
+
       </header>
       <div class="e-content article-entry" itemprop="articleBody">
         
-          <h4 id="一、数据准备"><a href="#一、数据准备" class="headerlink" title="一、数据准备"></a>一、数据准备</h4><h5 id="1-导入4张dem图像"><a href="#1-导入4张dem图像" class="headerlink" title="1.导入4张dem图像"></a>1.导入4张dem图像</h5><p><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202310301450417.png"></p>
+          <span id="more"></span>
+<h4 id="一、数据准备"><a href="#一、数据准备" class="headerlink" title="一、数据准备"></a>一、数据准备</h4><h5 id="1-导入4张dem图像"><a href="#1-导入4张dem图像" class="headerlink" title="1.导入4张dem图像"></a>1.导入4张dem图像</h5><p><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202310301450417.png"></p>
 <h5 id="2-dem数据合并"><a href="#2-dem数据合并" class="headerlink" title="2.dem数据合并"></a>2.dem数据合并</h5><p>数据管理工具→栅格→镶嵌至新栅格</p>
 <p><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202310301454798.png"></p>
 <p>合并之后的图像如下：</p>
@@ -364,22 +363,27 @@
   
     
 <nav id="article-nav">
-  <a class="article-nav-btn left  disabled "
+  <a class="article-nav-btn left "
+    
+      href="/2023/08/12/git%E5%9F%BA%E7%A1%80%E6%8C%87%E4%BB%A4/"
+      title="git相关指令"
      >
     <i class="fa-solid fa-angle-left"></i>
     <p class="title-text">
+      
+        git相关指令
         
     </p>
   </a>
   <a class="article-nav-btn right "
     
-      href="/2023/10/16/picgo-github%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BA%8A/"
-      title="picgo+github创建图床并在typora上使用"
+      href="/2023/07/12/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"
+      title="数据库语法字典"
      >
 
     <p class="title-text">
       
-        picgo+github创建图床并在typora上使用
+        数据库语法字典
         
     </p>
     <i class="fa-solid fa-angle-right"></i>
