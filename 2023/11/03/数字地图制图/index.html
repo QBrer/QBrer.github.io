@@ -13,12 +13,12 @@
   
   <title>DEM地形分析制图 | QBrer的烂笔头</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="一、数据准备1.导入4张dem图像 2.dem数据合并数据管理工具→栅格→镶嵌至新栅格  合并之后的图像如下：  3.数据裁剪：获取河南数据导入数据CHN_adm1，打开属性表，选择河南那一栏属性，数据→导出数据   数据管理工具→栅格→栅格处理→裁剪  结果如下图所示：  二、DEM应用之坡度：Slop1.坡度表示3d analyst工具→栅格表面→坡度   2.根据需要更改符号系统 3.添">
+  <meta name="description" content="一、数据准备1.导入4张dem图像  2.dem数据合并数据管理工具→栅格→镶嵌至新栅格   合并之后的图像如下：   3.数据裁剪：获取河南数据导入数据CHN_adm1，打开属性表，选择河南那一栏属性，数据→导出数据     数据管理工具→栅格→栅格处理→裁剪   结果如下图所示：   二、DEM应用之坡度：Slop1.坡度表示3d analyst工具→栅格表面→坡度   2.根据需要更改符">
 <meta property="og:type" content="article">
 <meta property="og:title" content="DEM地形分析制图">
 <meta property="og:url" content="https://qbrer.github.io/2023/11/03/%E6%95%B0%E5%AD%97%E5%9C%B0%E5%9B%BE%E5%88%B6%E5%9B%BE/index.html">
 <meta property="og:site_name" content="QBrer的烂笔头">
-<meta property="og:description" content="一、数据准备1.导入4张dem图像 2.dem数据合并数据管理工具→栅格→镶嵌至新栅格  合并之后的图像如下：  3.数据裁剪：获取河南数据导入数据CHN_adm1，打开属性表，选择河南那一栏属性，数据→导出数据   数据管理工具→栅格→栅格处理→裁剪  结果如下图所示：  二、DEM应用之坡度：Slop1.坡度表示3d analyst工具→栅格表面→坡度   2.根据需要更改符号系统 3.添">
+<meta property="og:description" content="一、数据准备1.导入4张dem图像  2.dem数据合并数据管理工具→栅格→镶嵌至新栅格   合并之后的图像如下：   3.数据裁剪：获取河南数据导入数据CHN_adm1，打开属性表，选择河南那一栏属性，数据→导出数据     数据管理工具→栅格→栅格处理→裁剪   结果如下图所示：   二、DEM应用之坡度：Slop1.坡度表示3d analyst工具→栅格表面→坡度   2.根据需要更改符">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://raw.githubusercontent.com/QBrer/blog_img/main/202310301450417.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/QBrer/blog_img/main/202310301454798.png">
@@ -46,7 +46,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/QBrer/blog_img/main/202311061401663.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/QBrer/blog_img/main/202311061408216.png">
 <meta property="article:published_time" content="2023-11-03T12:04:12.000Z">
-<meta property="article:modified_time" content="2023-11-18T09:05:55.494Z">
+<meta property="article:modified_time" content="2023-11-18T11:35:43.875Z">
 <meta property="article:author" content="QBrer">
 <meta property="article:tag" content="arcgis">
 <meta name="twitter:card" content="summary">
@@ -323,7 +323,7 @@
   
           </div>
           <div class="wordcount need-seperator meta-info">
-            512 词 
+            788 词 
           </div>
         </div>
         
@@ -334,44 +334,71 @@
         
           <span id="more"></span>
 
-<h4 id="一、数据准备"><a href="#一、数据准备" class="headerlink" title="一、数据准备"></a>一、数据准备</h4><h5 id="1-导入4张dem图像"><a href="#1-导入4张dem图像" class="headerlink" title="1.导入4张dem图像"></a>1.导入4张dem图像</h5><p><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202310301450417.png"></p>
-<h5 id="2-dem数据合并"><a href="#2-dem数据合并" class="headerlink" title="2.dem数据合并"></a>2.dem数据合并</h5><p>数据管理工具→栅格→镶嵌至新栅格</p>
-<p><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202310301454798.png"></p>
-<p>合并之后的图像如下：</p>
-<p><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202310301455476.png"></p>
-<h5 id="3-数据裁剪：获取河南数据"><a href="#3-数据裁剪：获取河南数据" class="headerlink" title="3.数据裁剪：获取河南数据"></a>3.数据裁剪：获取河南数据</h5><p>导入数据CHN_adm1，打开属性表，选择河南那一栏属性，数据→导出数据</p>
-<p><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202310301457007.png"></p>
-<p><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202310301458757.png"></p>
-<p>数据管理工具→栅格→栅格处理→裁剪</p>
-<p><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202310301500933.png"></p>
-<p>结果如下图所示：</p>
-<p><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202310301502903.png"></p>
-<h4 id="二、DEM应用之坡度：Slop"><a href="#二、DEM应用之坡度：Slop" class="headerlink" title="二、DEM应用之坡度：Slop"></a>二、DEM应用之坡度：Slop</h4><h5 id="1-坡度表示"><a href="#1-坡度表示" class="headerlink" title="1.坡度表示"></a>1.坡度表示</h5><p>3d analyst工具→栅格表面→坡度</p>
-<img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202310301506074.png" style="zoom:67%;" />
+<h4 id="一、数据准备"><a href="#一、数据准备" class="headerlink" title="一、数据准备"></a>一、数据准备</h4><h5 id="1-导入4张dem图像"><a href="#1-导入4张dem图像" class="headerlink" title="1.导入4张dem图像"></a>1.导入4张dem图像</h5><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202310301450417.png" style="zoom: 50%;" />
 
-<h5 id="2-根据需要更改符号系统"><a href="#2-根据需要更改符号系统" class="headerlink" title="2.根据需要更改符号系统"></a>2.根据需要更改符号系统</h5><p><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202310301513345.png"></p>
-<h5 id="3-添加比例尺、图例、指北针等要素，进行坡度制图"><a href="#3-添加比例尺、图例、指北针等要素，进行坡度制图" class="headerlink" title="3.添加比例尺、图例、指北针等要素，进行坡度制图"></a>3.添加比例尺、图例、指北针等要素，进行坡度制图</h5><p><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202310301536758.png"></p>
+<h5 id="2-dem数据合并"><a href="#2-dem数据合并" class="headerlink" title="2.dem数据合并"></a>2.dem数据合并</h5><p>数据管理工具→栅格→镶嵌至新栅格</p>
+<img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202310301454798.png" style="zoom:50%;" />
+
+<p>合并之后的图像如下：</p>
+<img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202310301455476.png" style="zoom:50%;" />
+
+<h5 id="3-数据裁剪：获取河南数据"><a href="#3-数据裁剪：获取河南数据" class="headerlink" title="3.数据裁剪：获取河南数据"></a>3.数据裁剪：获取河南数据</h5><p>导入数据CHN_adm1，打开属性表，选择河南那一栏属性，数据→导出数据</p>
+<img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202310301457007.png" style="zoom:50%;" />
+
+<img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202310301458757.png" style="zoom:50%;" />
+
+<p>数据管理工具→栅格→栅格处理→裁剪</p>
+<img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202310301500933.png" style="zoom:50%;" />
+
+<p>结果如下图所示：</p>
+<img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202310301502903.png" style="zoom:50%;" />
+
+<h4 id="二、DEM应用之坡度：Slop"><a href="#二、DEM应用之坡度：Slop" class="headerlink" title="二、DEM应用之坡度：Slop"></a>二、DEM应用之坡度：Slop</h4><h5 id="1-坡度表示"><a href="#1-坡度表示" class="headerlink" title="1.坡度表示"></a>1.坡度表示</h5><p>3d analyst工具→栅格表面→坡度</p>
+<img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202310301506074.png" style="zoom: 50%;" />
+
+<h5 id="2-根据需要更改符号系统"><a href="#2-根据需要更改符号系统" class="headerlink" title="2.根据需要更改符号系统"></a>2.根据需要更改符号系统</h5><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202310301513345.png" style="zoom:50%;" />
+
+<h5 id="3-添加比例尺、图例、指北针等要素，进行坡度制图"><a href="#3-添加比例尺、图例、指北针等要素，进行坡度制图" class="headerlink" title="3.添加比例尺、图例、指北针等要素，进行坡度制图"></a>3.添加比例尺、图例、指北针等要素，进行坡度制图</h5><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202310301536758.png" style="zoom:50%;" />
+
 <h5 id="4-遇到的一些问题"><a href="#4-遇到的一些问题" class="headerlink" title="4.遇到的一些问题"></a>4.遇到的一些问题</h5><p>在图例的下方有个&lt;值&gt;，感觉很碍事，解决办法为：</p>
 <p>选择该图例右键属性——选择项目——选中你需要删除&lt;值&gt;的图层的名称——样式——属性——常规——取消勾选“显示标题”即可</p>
-<p><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202310301523377.png"></p>
+<img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202310301523377.png" style="zoom:50%;" />
+
 <h4 id="三、DEM应用之坡向：Aspect"><a href="#三、DEM应用之坡向：Aspect" class="headerlink" title="三、DEM应用之坡向：Aspect"></a>三、DEM应用之坡向：Aspect</h4><h5 id="1-坡向表示"><a href="#1-坡向表示" class="headerlink" title="1.坡向表示"></a>1.坡向表示</h5><p>3d analyst工具→栅格表面→坡度</p>
-<p><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202310301533381.png"></p>
+<img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202310301533381.png" style="zoom:50%;" />
+
 <h5 id="2-添加比例尺、图例、指北针等要素，进行坡度制图"><a href="#2-添加比例尺、图例、指北针等要素，进行坡度制图" class="headerlink" title="2.添加比例尺、图例、指北针等要素，进行坡度制图"></a>2.添加比例尺、图例、指北针等要素，进行坡度制图</h5><p>制图结果如下：</p>
-<p><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202310301603623.png"></p>
-<h4 id="四、DEM应用之提取等高线"><a href="#四、DEM应用之提取等高线" class="headerlink" title="四、DEM应用之提取等高线"></a>四、DEM应用之提取等高线</h4><h5 id="1-3d-analyst工具→栅格表面→等值线"><a href="#1-3d-analyst工具→栅格表面→等值线" class="headerlink" title="1.3d analyst工具→栅格表面→等值线"></a>1.3d analyst工具→栅格表面→等值线</h5><p><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202311011413655.png"></p>
-<h5 id="2-添加比例尺、图例、指北针等要素，进行等高线制图"><a href="#2-添加比例尺、图例、指北针等要素，进行等高线制图" class="headerlink" title="2 添加比例尺、图例、指北针等要素，进行等高线制图"></a>2 添加比例尺、图例、指北针等要素，进行等高线制图</h5><p><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202311011414012.png"></p>
-<h4 id="五、DEM应用之等高线创建TIN"><a href="#五、DEM应用之等高线创建TIN" class="headerlink" title="五、DEM应用之等高线创建TIN"></a>五、DEM应用之等高线创建TIN</h4><h5 id="1-3d-analyst工具→数据管理→TIN→创建TIN"><a href="#1-3d-analyst工具→数据管理→TIN→创建TIN" class="headerlink" title="1.3d analyst工具→数据管理→TIN→创建TIN"></a>1.3d analyst工具→数据管理→TIN→创建TIN</h5><p><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202311011418976.png"></p>
-<h5 id="2-添加比例尺、图例、指北针等要素，进行TIN制图"><a href="#2-添加比例尺、图例、指北针等要素，进行TIN制图" class="headerlink" title="2.添加比例尺、图例、指北针等要素，进行TIN制图"></a>2.添加比例尺、图例、指北针等要素，进行TIN制图</h5><h5 id="3-遇到的一些问题"><a href="#3-遇到的一些问题" class="headerlink" title="3.遇到的一些问题"></a>3.遇到的一些问题</h5><p><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202311011420135.png"></p>
+<img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202310301603623.png" style="zoom:50%;" />
+
+<h4 id="四、DEM应用之提取等高线"><a href="#四、DEM应用之提取等高线" class="headerlink" title="四、DEM应用之提取等高线"></a>四、DEM应用之提取等高线</h4><h5 id="1-3d-analyst工具→栅格表面→等值线"><a href="#1-3d-analyst工具→栅格表面→等值线" class="headerlink" title="1.3d analyst工具→栅格表面→等值线"></a>1.3d analyst工具→栅格表面→等值线</h5><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202311011413655.png" style="zoom:50%;" />
+
+<h5 id="2-添加比例尺、图例、指北针等要素，进行等高线制图"><a href="#2-添加比例尺、图例、指北针等要素，进行等高线制图" class="headerlink" title="2 添加比例尺、图例、指北针等要素，进行等高线制图"></a>2 添加比例尺、图例、指北针等要素，进行等高线制图</h5><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202311011414012.png" style="zoom:50%;" />
+
+<h4 id="五、DEM应用之等高线创建TIN"><a href="#五、DEM应用之等高线创建TIN" class="headerlink" title="五、DEM应用之等高线创建TIN"></a>五、DEM应用之等高线创建TIN</h4><h5 id="1-3d-analyst工具→数据管理→TIN→创建TIN"><a href="#1-3d-analyst工具→数据管理→TIN→创建TIN" class="headerlink" title="1.3d analyst工具→数据管理→TIN→创建TIN"></a>1.3d analyst工具→数据管理→TIN→创建TIN</h5><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202311011418976.png" style="zoom:50%;" />
+
+<h5 id="2-添加比例尺、图例、指北针等要素，进行TIN制图"><a href="#2-添加比例尺、图例、指北针等要素，进行TIN制图" class="headerlink" title="2.添加比例尺、图例、指北针等要素，进行TIN制图"></a>2.添加比例尺、图例、指北针等要素，进行TIN制图</h5><h5 id="3-遇到的一些问题"><a href="#3-遇到的一些问题" class="headerlink" title="3.遇到的一些问题"></a>3.遇到的一些问题</h5><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202311011420135.png" style="zoom: 67%;" />
+
 <p>点击菜单栏-&gt;自定义-&gt;扩展模块-&gt;勾选3d analyst即可</p>
 <p><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202311011421671.png"></p>
-<h4 id="六、DEM应用之计算地形表面的阴影图"><a href="#六、DEM应用之计算地形表面的阴影图" class="headerlink" title="六、DEM应用之计算地形表面的阴影图"></a>六、DEM应用之计算地形表面的阴影图</h4><h5 id="1-3d-analyst工具→栅格表面→山体阴影"><a href="#1-3d-analyst工具→栅格表面→山体阴影" class="headerlink" title="1.3d analyst工具→栅格表面→山体阴影"></a>1.3d analyst工具→栅格表面→山体阴影</h5><p><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202311011508738.png"></p>
+<h4 id="六、DEM应用之计算地形表面的阴影图"><a href="#六、DEM应用之计算地形表面的阴影图" class="headerlink" title="六、DEM应用之计算地形表面的阴影图"></a>六、DEM应用之计算地形表面的阴影图</h4><h5 id="1-3d-analyst工具→栅格表面→山体阴影"><a href="#1-3d-analyst工具→栅格表面→山体阴影" class="headerlink" title="1.3d analyst工具→栅格表面→山体阴影"></a>1.3d analyst工具→栅格表面→山体阴影</h5><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202311011508738.png" style="zoom:50%;" />
+
 <h5 id="2-dem渲染"><a href="#2-dem渲染" class="headerlink" title="2.dem渲染"></a>2.dem渲染</h5><p>将tin图层置于hillshade之上，改变tin透明度为45%</p>
-<p><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202311011451307.png"></p>
-<p><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202311011452395.png"></p>
-<h5 id="3-添加比例尺、图例、指北针等要素，进行TIN制图"><a href="#3-添加比例尺、图例、指北针等要素，进行TIN制图" class="headerlink" title="3.添加比例尺、图例、指北针等要素，进行TIN制图"></a>3.添加比例尺、图例、指北针等要素，进行TIN制图</h5><p><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202311061326683.png"></p>
-<h4 id="七、DEM应用之可视性分析"><a href="#七、DEM应用之可视性分析" class="headerlink" title="七、DEM应用之可视性分析"></a>七、DEM应用之可视性分析</h4><h5 id="1-打开3D-Analyst工具栏，从工具栏选择创建通视线"><a href="#1-打开3D-Analyst工具栏，从工具栏选择创建通视线" class="headerlink" title="1.打开3D Analyst工具栏，从工具栏选择创建通视线"></a>1.打开3D Analyst工具栏，从工具栏选择创建通视线</h5><p><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202311061400548.png"></p>
-<p><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202311061401663.png"></p>
-<h5 id="2-添加比例尺、图例、指北针等要素，进行通视性制图"><a href="#2-添加比例尺、图例、指北针等要素，进行通视性制图" class="headerlink" title="2.添加比例尺、图例、指北针等要素，进行通视性制图"></a>2.添加比例尺、图例、指北针等要素，进行通视性制图</h5><p><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202311061408216.png"></p>
+<img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202311011451307.png" style="zoom:50%;" />
+
+<img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202311011452395.png" style="zoom:50%;" />
+
+<h5 id="3-添加比例尺、图例、指北针等要素，进行TIN制图"><a href="#3-添加比例尺、图例、指北针等要素，进行TIN制图" class="headerlink" title="3.添加比例尺、图例、指北针等要素，进行TIN制图"></a>3.添加比例尺、图例、指北针等要素，进行TIN制图</h5><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202311061326683.png" style="zoom:50%;" />
+
+
+
+<h4 id="七、DEM应用之可视性分析"><a href="#七、DEM应用之可视性分析" class="headerlink" title="七、DEM应用之可视性分析"></a>七、DEM应用之可视性分析</h4><h5 id="1-打开3D-Analyst工具栏，从工具栏选择创建通视线"><a href="#1-打开3D-Analyst工具栏，从工具栏选择创建通视线" class="headerlink" title="1.打开3D Analyst工具栏，从工具栏选择创建通视线"></a>1.打开3D Analyst工具栏，从工具栏选择创建通视线</h5><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202311061400548.png" style="zoom:50%;" />
+
+<img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202311061401663.png" style="zoom:50%;" />
+
+<h5 id="2-添加比例尺、图例、指北针等要素，进行通视性制图"><a href="#2-添加比例尺、图例、指北针等要素，进行通视性制图" class="headerlink" title="2.添加比例尺、图例、指北针等要素，进行通视性制图"></a>2.添加比例尺、图例、指北针等要素，进行通视性制图</h5><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202311061408216.png" style="zoom:50%;" />
+
+
+
 
         
       </div>
