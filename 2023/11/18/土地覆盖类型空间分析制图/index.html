@@ -13,18 +13,37 @@
   
   <title>土地覆盖类型空间分析制图 | QBrer的烂笔头</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="一、统计分析制图1.导入 henan.tif，并将其分为以下 6 类2.导入全国市级数据，裁剪出河南省的数据3.将处理后的 henan.tif 进行栅格转面操作，转换工具→由栅格转出→栅格转面结果如下：4.将矢量化后的数据与裁剪出的河南市级数据进行叠加分析，分析工具→叠加分析→标识5.打开属性表，新加字段 area，通过字段计算器取值 gridcode 首个数字6.导出 NL_NAME_2 与">
+  <meta name="description" content="一、统计分析制图1.导入 henan.tif，并将其分为以下 6 类  2.导入全国市级数据，裁剪出河南省的数据 3.将处理后的 henan.tif 进行栅格转面操作，转换工具→由栅格转出→栅格转面  结果如下：   4.将矢量化后的数据与裁剪出的河南市级数据进行叠加分析，分析工具→叠加分析→标识  5.打开属性表，新加字段 area，通过字段计算器取值 gridcode 首个数字   6.导">
 <meta property="og:type" content="article">
 <meta property="og:title" content="土地覆盖类型空间分析制图">
 <meta property="og:url" content="https://qbrer.github.io/2023/11/18/%E5%9C%9F%E5%9C%B0%E8%A6%86%E7%9B%96%E7%B1%BB%E5%9E%8B%E7%A9%BA%E9%97%B4%E5%88%86%E6%9E%90%E5%88%B6%E5%9B%BE/index.html">
 <meta property="og:site_name" content="QBrer的烂笔头">
-<meta property="og:description" content="一、统计分析制图1.导入 henan.tif，并将其分为以下 6 类2.导入全国市级数据，裁剪出河南省的数据3.将处理后的 henan.tif 进行栅格转面操作，转换工具→由栅格转出→栅格转面结果如下：4.将矢量化后的数据与裁剪出的河南市级数据进行叠加分析，分析工具→叠加分析→标识5.打开属性表，新加字段 area，通过字段计算器取值 gridcode 首个数字6.导出 NL_NAME_2 与">
+<meta property="og:description" content="一、统计分析制图1.导入 henan.tif，并将其分为以下 6 类  2.导入全国市级数据，裁剪出河南省的数据 3.将处理后的 henan.tif 进行栅格转面操作，转换工具→由栅格转出→栅格转面  结果如下：   4.将矢量化后的数据与裁剪出的河南市级数据进行叠加分析，分析工具→叠加分析→标识  5.打开属性表，新加字段 area，通过字段计算器取值 gridcode 首个数字   6.导">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://raw.githubusercontent.com/QBrer/blog_img/main/img/202311181916649.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/QBrer/blog_img/main/img/202311181916650.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/QBrer/blog_img/main/img/202311181916651.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/QBrer/blog_img/main/img/202311181916652.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/QBrer/blog_img/main/img/202311181916653.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/QBrer/blog_img/main/img/202311181916655.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/QBrer/blog_img/main/img/202311181916656.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/QBrer/blog_img/main/img/202311181916659.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/QBrer/blog_img/main/img/202311181916662.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/QBrer/blog_img/main/img/202311181916632.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/QBrer/blog_img/main/img/202311181916634.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/QBrer/blog_img/main/img/202311181916636.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/QBrer/blog_img/main/img/202311181916635.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/QBrer/blog_img/main/img/202311181916637.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/QBrer/blog_img/main/img/202311181928234.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/QBrer/blog_img/main/img/202311181929454.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/QBrer/blog_img/main/img/202311181916647.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/QBrer/blog_img/main/img/202311181916648.png">
 <meta property="article:published_time" content="2023-11-18T09:04:04.000Z">
-<meta property="article:modified_time" content="2023-11-18T09:22:06.823Z">
+<meta property="article:modified_time" content="2023-11-18T11:31:29.421Z">
 <meta property="article:author" content="QBrer">
 <meta property="article:tag" content="arcgis">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/QBrer/blog_img/main/img/202311181916649.png">
   
     <link rel="alternate" href="/atom.xml" title="QBrer的烂笔头" type="application/atom+xml">
   
@@ -297,7 +316,7 @@
   
           </div>
           <div class="wordcount need-seperator meta-info">
-            457 词 
+            591 词 
           </div>
         </div>
         
@@ -308,9 +327,52 @@
         
           <span id="more"></span>
 
-<h4 id="一、统计分析制图"><a href="#一、统计分析制图" class="headerlink" title="一、统计分析制图"></a>一、统计分析制图</h4><p>1.导入 henan.tif，并将其分为以下 6 类<br>2.导入全国市级数据，裁剪出河南省的数据<br>3.将处理后的 henan.tif 进行栅格转面操作，转换工具→由栅格转出→栅格转面<br>结果如下：<br>4.将矢量化后的数据与裁剪出的河南市级数据进行叠加分析，分析工具→叠加分<br>析→标识<br>5.打开属性表，新加字段 area，通过字段计算器取值 gridcode 首个数字<br>6.导出 NL_NAME_2 与 area 字段并转化为 excel 表形式，转换工具→Excel→表转<br>Excel，去除 area 为 0 的数据，使用表达式进行计算各个地物类型的占比<br>7.剪切结果，另存为.xls 文件（不然连接时会报错）<br>8.连接数据到河南市级图层，符号系统选择饼图，选择相应字段，显示标注，结<br>果如下：</p>
-<h4 id="二、推理制图"><a href="#二、推理制图" class="headerlink" title="二、推理制图"></a>二、推理制图</h4><p>1.将 henan1.tif 进行栅格转点<br>2.打开属性表，新增字段耕地，使用字段计算器，将 grid_code 首数字为 1 所对<br>应的耕地赋值为 1，其余赋为空值。<br>3.空间分析→密度分析→核密度分析<br>4.将河南省市区图层改为无颜色，再将图层放到核密度图层上方，结果如下：<br>5.同理，输出其他地物类型核密度分析图</p>
-<h4 id="三、知识制图"><a href="#三、知识制图" class="headerlink" title="三、知识制图"></a>三、知识制图</h4><p>1.裁剪出河南省各市区的数据<br>2.裁剪出各市区各地物类型点数据<br>3.对各市区进行方向分布处理，权重选择耕地，字段数据来源于实验二<br>3.新建图层，将部分市区耕地标准差椭圆分析出图<br>4.后续按相同步骤将全部市区各地物类型出图</p>
+<h4 id="一、统计分析制图"><a href="#一、统计分析制图" class="headerlink" title="一、统计分析制图"></a>一、统计分析制图</h4><p>1.导入 henan.tif，并将其分为以下 6 类</p>
+<p><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/img/202311181916649.png"></p>
+<p>2.导入全国市级数据，裁剪出河南省的数据</p>
+<p>3.将处理后的 henan.tif 进行栅格转面操作，转换工具→由栅格转出→栅格转面</p>
+<p><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/img/202311181916650.png"></p>
+<p>结果如下：</p>
+<img src="https://raw.githubusercontent.com/QBrer/blog_img/main/img/202311181916651.png" style="zoom:50%;" />
+
+<p>4.将矢量化后的数据与裁剪出的河南市级数据进行叠加分析，分析工具→叠加分析→标识</p>
+<p><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/img/202311181916652.png"></p>
+<p>5.打开属性表，新加字段 area，通过字段计算器取值 gridcode 首个数字</p>
+<img src="https://raw.githubusercontent.com/QBrer/blog_img/main/img/202311181916653.png" style="zoom:67%;" />
+
+<p>6.导出 NL_NAME_2 与 area 字段并转化为 excel 表形式，转换工具→Excel→表转Excel，去除 area 为 0 的数据，使用表达式进行计算各个地物类型的占比</p>
+<p><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/img/202311181916655.png"></p>
+<p>7.剪切结果，另存为.xls 文件（不然连接时会报错）</p>
+<img src="https://raw.githubusercontent.com/QBrer/blog_img/main/img/202311181916656.png" style="zoom:67%;" />
+
+<p>8.连接数据到河南市级图层，符号系统选择饼图，选择相应字段，显示标注，结果如下：</p>
+<p><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/img/202311181916659.png"></p>
+<h4 id="二、推理制图"><a href="#二、推理制图" class="headerlink" title="二、推理制图"></a>二、推理制图</h4><p>1.将 henan1.tif 进行栅格转点</p>
+<p>2.打开属性表，新增字段耕地，使用字段计算器，将 grid_code 首数字为 1 所对应的耕地赋值为 1，其余赋为空值。</p>
+<img src="https://raw.githubusercontent.com/QBrer/blog_img/main/img/202311181916662.png" style="zoom:67%;" />
+
+<img src="https://raw.githubusercontent.com/QBrer/blog_img/main/img/202311181916632.png" style="zoom: 67%;" />
+
+<p>3.空间分析→密度分析→核密度分析，并点击环境更改处理范围掩膜为该图层</p>
+<img src="https://raw.githubusercontent.com/QBrer/blog_img/main/img/202311181916634.png" style="zoom:67%;" />
+
+<img src="https://raw.githubusercontent.com/QBrer/blog_img/main/img/202311181916636.png" style="zoom:50%;" />
+
+<img src="https://raw.githubusercontent.com/QBrer/blog_img/main/img/202311181916635.png" style="zoom: 67%;" />
+
+<p>4.将河南省市区图层改为无颜色，再将图层放到核密度图层上方，结果如下：</p>
+<img src="https://raw.githubusercontent.com/QBrer/blog_img/main/img/202311181916637.png" style="zoom: 50%;" />
+
+<p>5.同理，输出其他地物类型核密度分析图</p>
+<p><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/img/202311181928234.png"></p>
+<h4 id="三、知识制图"><a href="#三、知识制图" class="headerlink" title="三、知识制图"></a>三、知识制图</h4><p>1.裁剪出河南省各市区的数据</p>
+<p>2.裁剪出各市区各地物类型点数据</p>
+<p><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/img/202311181929454.png"></p>
+<p>3.对各市区进行方向分布处理，权重选择耕地，字段数据来源于实验二</p>
+<p><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/img/202311181916647.png"></p>
+<p>4.新建图层，将部分市区耕地标准差椭圆分析出图</p>
+<p><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/img/202311181916648.png"></p>
+<p>5.后续按相同步骤将全部市区各地物类型出图</p>
 
         
       </div>
