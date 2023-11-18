@@ -10,7 +10,7 @@ photos: https://raw.githubusercontent.com/QBrer/blog_img/main/img/20231013211835
 
 #### 解决原理
 
-该方法主要利用git与分支管理。通过hexo d部署的静态文件会部署在全局配置文件中所写的分支上，默认是master分支，而通过git clone与git pull所拉取的源文件分支为github仓库所设置的默认分支，通过两个分支分别处理就可以解决多个设备的同步问题。
+该方法主要利用git与分支管理。通过hexo d部署的静态文件会部署在全局配置文件中所写的分支上，默认是master分支，这是由自己的config.yml配置文件所决定的，而通过git clone与git pull所拉取的源文件分支为github仓库所设置的默认分支，我们只需要新建分支并将其设置为新的默认分支，随后通过两个分支分别处理就可以解决多个设备的同步问题。
 
 #### 方法步骤
 
