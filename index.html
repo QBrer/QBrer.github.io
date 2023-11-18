@@ -146,21 +146,6 @@
                 编程
                 <div class="category-count">1</div>
             </a>
-        
-            <a class="category-link" href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/">
-                服务器
-                <div class="category-count">1</div>
-            </a>
-        
-            <a class="category-link" href="/categories/%E5%89%8D%E7%AB%AF/">
-                前端
-                <div class="category-count">1</div>
-            </a>
-        
-            <a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">
-                数据库
-                <div class="category-count">1</div>
-            </a>
         </div>
     </div>
   </div>
@@ -185,7 +170,7 @@
       
         <a class="archive-link" href="/archives/2023/11 ">
           十一月 2023 
-          <div class="archive-count">1 </div>
+          <div class="archive-count">2 </div>
         </a>
       
         <a class="archive-link" href="/archives/2023/10 ">
@@ -219,9 +204,15 @@
       <h3 class="widget-title">最新文章</h3>
       <ul>
         
-          <a class="recent-link" href="/2023/11/03/%E6%95%B0%E5%AD%97%E5%9C%B0%E5%9B%BE%E5%88%B6%E5%9B%BE/" title="数字地图制图" >
+          <a class="recent-link" href="/2023/11/18/%E5%9C%9F%E5%9C%B0%E8%A6%86%E7%9B%96%E7%B1%BB%E5%9E%8B%E7%A9%BA%E9%97%B4%E5%88%86%E6%9E%90%E5%88%B6%E5%9B%BE/" title="土地覆盖类型空间分析制图" >
             <div class="recent-link-text">
-              数字地图制图
+              土地覆盖类型空间分析制图
+            </div>
+          </a>
+        
+          <a class="recent-link" href="/2023/11/03/%E6%95%B0%E5%AD%97%E5%9C%B0%E5%9B%BE%E5%88%B6%E5%9B%BE/" title="DEM地形分析制图" >
+            <div class="recent-link-text">
+              DEM地形分析制图
             </div>
           </a>
         
@@ -243,12 +234,6 @@
             </div>
           </a>
         
-          <a class="recent-link" href="/2023/08/12/git%E5%9F%BA%E7%A1%80%E6%8C%87%E4%BB%A4/" title="git相关指令" >
-            <div class="recent-link-text">
-              git相关指令
-            </div>
-          </a>
-        
       </ul>
     </div>
   </div>
@@ -259,6 +244,73 @@
     </div>
     <div id="content-body">
       
+   
+
+<article id="post-土地覆盖类型空间分析制图" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+   
+  <div class="article-inner">
+    <div class="article-main">
+      <header class="article-header">
+        
+<div class="main-title-bar">
+  <div class="main-title-dot"></div>
+  
+    
+      <h1 itemprop="name">
+        <a class="p-name article-title" href="/2023/11/18/%E5%9C%9F%E5%9C%B0%E8%A6%86%E7%9B%96%E7%B1%BB%E5%9E%8B%E7%A9%BA%E9%97%B4%E5%88%86%E6%9E%90%E5%88%B6%E5%9B%BE/">土地覆盖类型空间分析制图</a>
+      </h1>
+    
+  
+</div>
+
+        <div class='meta-info-bar'>
+          <div class="meta-info">
+  <time class="dt-published" datetime="2023-11-18T09:04:04.000Z" itemprop="datePublished">2023-11-18</time>
+</div>
+          <div class="need-seperator meta-info">
+            <div class="meta-cate-flex">
+  
+    未分类 
+   
+</div>
+  
+          </div>
+          <div class="wordcount need-seperator meta-info">
+            457 词 
+          </div>
+        </div>
+        
+      </header>
+      <div class="e-content article-entry" itemprop="articleBody">
+        
+          <div class="truncate-text">
+            
+
+一、统计分析制图1.导入 henan.tif，并将其分为以下 6 类2.导入全国市级数据，裁剪出河南省的数据3.将处理后的 henan.tif 进行栅格转面操作，转换工具→由栅格转出→栅格转面结果如下：4.将矢量化后的数据与裁剪出的河南市级数据进行叠加分析，分析工具→叠加分析→标识5.打开属性表，新加字段 area，通过字段计算器取值 gridcode 首个数字6.导出 NL_NAME_2 与 area 字段并转化为 excel 表形式，转换工具→Excel→表转Excel，去除 area 为 0 的数据，使用表达式进行计算各个地物类型的占比7.剪切结果，另存为.xls 文件（不然连接时会报错）8.连接数据到河南市级图层，符号系统选择饼图，选择相应字段，显示标注，结果如下：
+二、推理制图1.将 henan1.tif 进行栅格转点2.打开属性表，新增字段耕地，使用字段计算器，将 grid_code 首数字为 1 所对应的耕地赋值为 1，其余赋为空值。3.空间分析→密度分析→核密度分析4.将河南省市区图层改为无颜色，再将图层放到核密度图层上方，结果如下：5.同理，输出其他地物类型...  
+          </div>
+        
+      </div>
+
+         
+    </div>
+    
+     
+    <a class="right-panel  non-pic  "
+      
+      href="/2023/11/18/%E5%9C%9F%E5%9C%B0%E8%A6%86%E7%9B%96%E7%B1%BB%E5%9E%8B%E7%A9%BA%E9%97%B4%E5%88%86%E6%9E%90%E5%88%B6%E5%9B%BE/" 
+    >
+       
+      <i class="fa-solid fa-angle-right non-pic"></i>
+       
+    </a>
+     
+  </div>
+  
+</article>
+
+ 
+
    
 
 <article id="post-数字地图制图" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
@@ -272,7 +324,7 @@
   
     
       <h1 itemprop="name">
-        <a class="p-name article-title" href="/2023/11/03/%E6%95%B0%E5%AD%97%E5%9C%B0%E5%9B%BE%E5%88%B6%E5%9B%BE/">数字地图制图</a>
+        <a class="p-name article-title" href="/2023/11/03/%E6%95%B0%E5%AD%97%E5%9C%B0%E5%9B%BE%E5%88%B6%E5%9B%BE/">DEM地形分析制图</a>
       </h1>
     
   
@@ -291,7 +343,7 @@
   
           </div>
           <div class="wordcount need-seperator meta-info">
-            519 词 
+            512 词 
           </div>
         </div>
         
@@ -302,6 +354,7 @@
         
           <div class="truncate-text">
             
+
 一、数据准备1.导入4张dem图像
 2.dem数据合并数据管理工具→栅格→镶嵌至新栅格
 
@@ -328,7 +381,7 @@
 
 四、DEM应用之提取等高线1.3d analyst工具→栅格表面→等值线
 2 添加比例尺、图例、指北针等要素，进行等高线制图
-五、DEM应用之等高线创建TIN1.3d analyst...  
+五、DEM应用之等高线创建TIN1.3d analys...  
           </div>
         
       </div>
