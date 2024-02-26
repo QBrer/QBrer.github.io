@@ -13,16 +13,16 @@
   
   <title>基于图像分割的土壤采样 | QBrer的烂笔头</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="1.数据来源（1）研究区影像：中国资源卫星应用中心GF-1，2018.6.21（不知道为什么分辨率不对，后重采样为16m）   （2）DEM数据：中国科学院航天信息研究所，16m分辨率  2.相应预处理（1）研究区影像：预处理（仅进行了辐射定标），计算其NDVI，按掩膜提取，更改坐标系，重采样为16m分辨率 （2）DEM数据：按掩膜提取 处理结果如下：   左为DEM，右为NDVI 处理范围有">
+  <meta name="description" content="1.数据来源（1）研究区影像：中国资源卫星应用中心GF-1，2018.6.21（不知道为什么分辨率不对，后重采样为16m）   （2）DEM数据：中国科学院航天信息研究所，16m分辨率  2.相应预处理（1）研究区影像：预处理（仅进行了辐射定标），计算其NDVI，按掩膜提取，更改坐标系，重采样为16m分辨率 （2）DEM数据：按掩膜提取 处理结果如下：  左为DEM，右为NDVI 处理范围有些">
 <meta property="og:type" content="article">
 <meta property="og:title" content="基于图像分割的土壤采样">
 <meta property="og:url" content="https://qbrer.github.io/2024/02/26/%E5%9F%BA%E4%BA%8E%E5%9B%BE%E5%83%8F%E5%88%86%E5%89%B2%E7%9A%84%E5%9C%9F%E5%A3%A4%E9%87%87%E6%A0%B7/index.html">
 <meta property="og:site_name" content="QBrer的烂笔头">
-<meta property="og:description" content="1.数据来源（1）研究区影像：中国资源卫星应用中心GF-1，2018.6.21（不知道为什么分辨率不对，后重采样为16m）   （2）DEM数据：中国科学院航天信息研究所，16m分辨率  2.相应预处理（1）研究区影像：预处理（仅进行了辐射定标），计算其NDVI，按掩膜提取，更改坐标系，重采样为16m分辨率 （2）DEM数据：按掩膜提取 处理结果如下：   左为DEM，右为NDVI 处理范围有">
+<meta property="og:description" content="1.数据来源（1）研究区影像：中国资源卫星应用中心GF-1，2018.6.21（不知道为什么分辨率不对，后重采样为16m）   （2）DEM数据：中国科学院航天信息研究所，16m分辨率  2.相应预处理（1）研究区影像：预处理（仅进行了辐射定标），计算其NDVI，按掩膜提取，更改坐标系，重采样为16m分辨率 （2）DEM数据：按掩膜提取 处理结果如下：  左为DEM，右为NDVI 处理范围有些">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://raw.githubusercontent.com/QBrer/blog_img/main/202402261040473.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/QBrer/blog_img/main/202402261138991.png">
-<meta property="og:image" content="c:\Users\QBrer\AppData\Roaming\Typora\typora-user-images\image-20240226112622953.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/QBrer/blog_img/main/202402261702669.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/QBrer/blog_img/main/202402261114563.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/QBrer/blog_img/main/202402261124292.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/QBrer/blog_img/main/202402261129902.png">
@@ -30,7 +30,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/QBrer/blog_img/main/202402261136642.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/QBrer/blog_img/main/202402261611889.png">
 <meta property="article:published_time" content="2024-02-26T02:20:22.000Z">
-<meta property="article:modified_time" content="2024-02-26T08:52:07.381Z">
+<meta property="article:modified_time" content="2024-02-26T09:02:58.045Z">
 <meta property="article:author" content="QBrer">
 <meta property="article:tag" content="arcgis">
 <meta name="twitter:card" content="summary">
@@ -156,12 +156,7 @@
   <div class="widget-wrap">
     <div class="widget">
       <h3 class="widget-title">分类</h3>
-      <div class="category-box">
-            <a class="category-link" href="/categories/%E7%BC%96%E7%A8%8B/">
-                编程
-                <div class="category-count">1</div>
-            </a>
-        </div>
+      <div class="category-box"></div>
     </div>
   </div>
 
@@ -302,7 +297,7 @@
   
           </div>
           <div class="wordcount need-seperator meta-info">
-            588 词 
+            568 词 
           </div>
         </div>
         
@@ -321,8 +316,7 @@
 <h4 id="2-相应预处理"><a href="#2-相应预处理" class="headerlink" title="2.相应预处理"></a>2.相应预处理</h4><p>（1）研究区影像：预处理（仅进行了辐射定标），计算其NDVI，按掩膜提取，更改坐标系，重采样为16m分辨率</p>
 <p>（2）DEM数据：按掩膜提取</p>
 <p>处理结果如下：</p>
-<img src="C:\Users\QBrer\AppData\Roaming\Typora\typora-user-images\image-20240226112622953.png" alt="image-20240226112622953" style="zoom:67%;" />
-
+<p><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202402261702669.png"></p>
 <p>左为DEM，右为NDVI</p>
 <p><strong>处理范围有些错误，范围中种植类型不统一</strong></p>
 <h4 id="3-计算对应的变异系数"><a href="#3-计算对应的变异系数" class="headerlink" title="3.计算对应的变异系数"></a>3.计算对应的变异系数</h4><p>（1）邻域分析-块统计，设置像元像元大小，计算出均值与方差</p>
