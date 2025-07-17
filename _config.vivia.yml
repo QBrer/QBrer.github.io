@@ -14,12 +14,12 @@ favicon: /someimg/icon.jpg         # Path to the custom favicon (e.g. "/favicon.
 # Banner
 banner:
   enable: true            # Display banner
-  url: /someimg/bg7.png
+  url: /someimg/bg11.jpg
   position: center         # Specifies the alignment of the image, see the "object-position" property in CSS
   onAllPages: true         # Display banner on all pages
 
 # Appearence
-hue: 345                   # The hue of the theme color (e.g. red: 0, orange: 60, blue: 260, purple: 300, pink: 345)
+hue: 260                   # The hue of the theme color (e.g. red: 0, orange: 60, blue: 260, purple: 300, pink: 345)
 
 # Sidebar
 sidebar:
@@ -41,12 +41,14 @@ avatar: /someimg/piccc.png
 author: QBrer
 subtitle: 简单记录下我所想
 links:
-  - name: bilibili
-    icon: fa-brands fa-bilibili      # Find icon codes at https://fontawesome.com/search
-    url: https://space.bilibili.com/424753682?spm_id_from=333.1007.0.0
-  - name: Steam
-    icon: fa-brands fa-steam
-    url: https://steamcommunity.com/id/aiaodfioaio/
+  - name: QQ 3093815036
+    icon: fa-brands fa-qq      # Find icon codes at https://fontawesome.com/search
+    # url: https://space.bilibili.com/424753682?spm_id_from=333.1007.0.0
+		url: https://im.qq.com/index/
+  - name: 邮箱 15137869764@163.com
+    icon: fa-solid fa-envelope
+    # url: https://steamcommunity.com/id/aiaodfioaio/
+		url: https://mail.163.com/
   - name: GitHub
     icon: fa-brands fa-github
     url: https://github.com/QBrer

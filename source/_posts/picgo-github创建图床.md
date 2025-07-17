@@ -5,7 +5,7 @@ category:
 tags: [图床, github]
 photos: https://raw.githubusercontent.com/QBrer/blog_img/main/img/202310221602238.png
 ---
-picgo+typora,什么best match😍，用起来爽死了
+picgo+typora, best match
 <!-- more -->
 
 ##### 1.使用github搭建图床
