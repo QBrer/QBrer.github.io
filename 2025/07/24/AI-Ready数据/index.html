@@ -22,7 +22,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://raw.githubusercontent.com/QBrer/blog_img/main/202507271646416.png">
 <meta property="article:published_time" content="2025-07-24T09:45:33.000Z">
-<meta property="article:modified_time" content="2025-07-27T09:45:08.089Z">
+<meta property="article:modified_time" content="2025-07-28T05:42:47.550Z">
 <meta property="article:author" content="QBrer">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/QBrer/blog_img/main/202507271646416.png">
@@ -323,7 +323,7 @@
   
           </div>
           <div class="wordcount need-seperator meta-info">
-            814 词 
+            1.1k 词 
           </div>
         </div>
         
@@ -369,6 +369,22 @@
 <p>3.AI-ready具体领域建设分析</p>
 <p>4.AI-ready具体领域平台建设实践</p>
 <p>5.总结与展望</p>
+<h4 id="chatgpt-AI-Ready-数据制备的关键技术"><a href="#chatgpt-AI-Ready-数据制备的关键技术" class="headerlink" title="chatgpt AI-Ready 数据制备的关键技术"></a>chatgpt AI-Ready 数据制备的关键技术</h4><h5 id="1-数据预处理技术"><a href="#1-数据预处理技术" class="headerlink" title="1. 数据预处理技术"></a>1. 数据预处理技术</h5><ul>
+<li><strong>重采样&#x2F;重投影</strong>：将多源数据统一到一致分辨率与坐标系统；</li>
+<li><strong>插值&#x2F;缺失值填补</strong>：使用时空插值（如Kriging、IDW、LSTM插补）填充数据缺失；</li>
+<li><strong>归一化&#x2F;标准化</strong>：满足模型输入需求；</li>
+<li><strong>标签生成</strong>：结合专家知识或规则自动生成训练标签（如土地利用类型、生态系统分类）；</li>
+</ul>
+<h5 id="2-数据集成技术"><a href="#2-数据集成技术" class="headerlink" title="2. 数据集成技术"></a>2. 数据集成技术</h5><ul>
+<li><strong>多源融合</strong>：融合遥感影像（光学、雷达）、气象站、模型输出等；</li>
+<li><strong>数据对齐与配准</strong>：空间配准、时间对齐、多尺度统一；</li>
+<li><strong>知识驱动融合</strong>：结合本体、规则与知识图谱提升语义集成质量；</li>
+</ul>
+<h5 id="3-数据共享与服务技术"><a href="#3-数据共享与服务技术" class="headerlink" title="3. 数据共享与服务技术"></a>3. 数据共享与服务技术</h5><ul>
+<li><strong>云原生数据服务</strong>：如基于 AWS、GEE（Google Earth Engine）、Open Data Cube；</li>
+<li><strong>API&#x2F;OGC标准服务</strong>：WMS&#x2F;WCS&#x2F;WFS&#x2F;CSW 等；</li>
+<li><strong>智能语义检索</strong>：结合知识图谱与语义标签进行智能查找；</li>
+</ul>
 <h5 id="AI应用崩溃原因"><a href="#AI应用崩溃原因" class="headerlink" title="AI应用崩溃原因"></a>AI应用崩溃原因</h5><p><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/202507271646416.png"></p>
 <h4 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h4><p>[1]钱力,刘志博,胡懋地,等.AI就绪的科技情报数据资源建设模式研究[J].农业图书情报学报,2024,36(03):32-45.DOI:10.13998&#x2F;j.cnki.issn1002-1248.24-0173.</p>
 <p>[1]何国金,刘慧婵,杨瑞清,张兆明,薛远,安诗豪,袁铭若,王桂周,龙腾飞,彭燕,尹然宇.遥感数据智能:进展与思考[J].地球信息科学学报,2025,27(2):273-284</p>
