@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 
-<html theme="dark" showBanner="true" hasBanner="desktop" > 
+<html theme="dark" showBanner="true" hasBanner="true" > 
 <link href="/fontawesome/css/fontawesome.css" rel="stylesheet">
 <link href="/fontawesome/css/brands.css" rel="stylesheet">
 <link href="/fontawesome/css/solid.css" rel="stylesheet">
@@ -11,22 +11,19 @@
   <meta charset="utf-8">
   
   
-  <title>hexo多设备同步更新 | QBrer的烂笔头</title>
+  <title>C++链接 | QBrer的烂笔头</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="写博客这件事情老是坚持不下来，一方面确实是懒，还有很大一方面是两个设备轮流着用，hexo又是个纯静态框架，导致自己老是在一个设备写好.md文件，传到另一个设备再部署，实在是麻烦，最近抽时间总算是解决了这个问题，写博客也顺手了很多。">
+  <meta name="description" content="核心内容 视频的核心内容是解释 C++ 程序从源代码到可执行文件的过程中，“链接”这一步骤的作用以及常见的链接错误和解决方法。  什么是链接？ [00:04] 链接是在编译之后的一个步骤，它的主要任务是找到程序中所有被称为“符号”的东西（比如函数或变量）的位置，并将它们连接起来，最终生成一个可执行文件 [00:21]。即使是只有一个文件的简单程序，也需要链接器来找到程序的入口点（main 函数">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo多设备同步更新">
-<meta property="og:url" content="https://qbrer.github.io/2023/10/12/hexo%E5%A4%9A%E8%AE%BE%E5%A4%87%E5%90%8C%E6%AD%A5%E6%9B%B4%E6%96%B0/index.html">
+<meta property="og:title" content="C++链接">
+<meta property="og:url" content="https://qbrer.github.io/2024/08/13/C-%E9%93%BE%E6%8E%A5/index.html">
 <meta property="og:site_name" content="QBrer的烂笔头">
-<meta property="og:description" content="写博客这件事情老是坚持不下来，一方面确实是懒，还有很大一方面是两个设备轮流着用，hexo又是个纯静态框架，导致自己老是在一个设备写好.md文件，传到另一个设备再部署，实在是麻烦，最近抽时间总算是解决了这个问题，写博客也顺手了很多。">
+<meta property="og:description" content="核心内容 视频的核心内容是解释 C++ 程序从源代码到可执行文件的过程中，“链接”这一步骤的作用以及常见的链接错误和解决方法。  什么是链接？ [00:04] 链接是在编译之后的一个步骤，它的主要任务是找到程序中所有被称为“符号”的东西（比如函数或变量）的位置，并将它们连接起来，最终生成一个可执行文件 [00:21]。即使是只有一个文件的简单程序，也需要链接器来找到程序的入口点（main 函数">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://raw.githubusercontent.com/QBrer/blog_img/main/img/202310132118356.png">
-<meta property="article:published_time" content="2023-10-12T14:32:40.000Z">
-<meta property="article:modified_time" content="2025-07-18T08:41:25.293Z">
+<meta property="article:published_time" content="2024-08-13T15:03:36.000Z">
+<meta property="article:modified_time" content="2025-08-15T15:04:13.307Z">
 <meta property="article:author" content="QBrer">
-<meta property="article:tag" content="git">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/QBrer/blog_img/main/img/202310132118356.png">
   
     <link rel="alternate" href="/atom.xml" title="QBrer的烂笔头" type="application/atom+xml">
   
@@ -302,19 +299,9 @@
     <div id="content-body">
        
 
-<article id="post-hexo多设备同步更新" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+<article id="post-C-链接" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   
     
-<div class="article-gallery">
-  <div class="article-gallery-photos">
-    
-      <a class="article-gallery-img" rel="gallery_cm805m8ft0005wosc6si12e6p">
-        <img src="https://raw.githubusercontent.com/QBrer/blog_img/main/img/202310132118356.png" itemprop="image">
-      </a>
-    
-  </div>
-</div>
-
    
   <div class="article-inner">
     <div class="article-main">
@@ -325,7 +312,7 @@
   
     
       <h1 class="p-name article-title" itemprop="headline name">
-        hexo多设备同步更新
+        C++链接
       </h1>
     
   
@@ -333,7 +320,7 @@
 
         <div class='meta-info-bar'>
           <div class="meta-info">
-  <time class="dt-published" datetime="2023-10-12T14:32:40.000Z" itemprop="datePublished">2023-10-12</time>
+  <time class="dt-published" datetime="2024-08-13T15:03:36.000Z" itemprop="datePublished">2024-08-13</time>
 </div>
           <div class="need-seperator meta-info">
             <div class="meta-cate-flex">
@@ -344,48 +331,47 @@
   
           </div>
           <div class="wordcount need-seperator meta-info">
-            573 词 
+            641 词 
           </div>
         </div>
         
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/" rel="tag">git</a></li></ul>
-
       </header>
       <div class="e-content article-entry" itemprop="articleBody">
         
-          <p>写博客这件事情老是坚持不下来，一方面确实是懒，还有很大一方面是两个设备轮流着用，hexo又是个纯静态框架，导致自己老是在一个设备写好.md文件，传到另一个设备再部署，实在是麻烦，最近抽时间总算是解决了这个问题，写博客也顺手了很多。</p>
-<span id="more"></span>
+          <span id="more"></span>
 
-<h4 id="解决原理"><a href="#解决原理" class="headerlink" title="解决原理"></a>解决原理</h4><p>该方法主要利用git与分支管理。通过hexo d部署的静态文件会部署在全局配置文件中所写的分支上，默认是master分支，这是由自己的config.yml配置文件所决定的，而通过git clone与git pull所拉取的源文件分支为github仓库所设置的默认分支，我们只需要新建分支并将其设置为新的默认分支，随后通过两个分支分别处理就可以解决多个设备的同步问题。</p>
-<h4 id="方法步骤"><a href="#方法步骤" class="headerlink" title="方法步骤"></a>方法步骤</h4><h5 id="1-有源文件的老设备"><a href="#1-有源文件的老设备" class="headerlink" title="1.有源文件的老设备"></a>1.有源文件的老设备</h5><p>①在自己博客仓库新创建hexo分支，并将其改为默认分支</p>
-<img src="https://raw.githubusercontent.com/QBrer/blog_img/main/img/202310132118356.png" style="zoom: 50%;" />
-
-<p>②通过git clone将hexo分支文件下载到本地（此时该分支文件与master分支相同），仅留下.git文件，其余文件全部删除，并将自己原本的博客源文件中除.deploy_git 以外的文件都复制到该文件夹（这个步骤是为了更新部署的分支，使推送与拉取分支变为新创建的hexo分支）</p>
-<p>③开始推送</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git add . </span><br><span class="line"></span><br><span class="line">git commit –m add_branch </span><br><span class="line"></span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
-
-<h5 id="2-无源文件的新设备"><a href="#2-无源文件的新设备" class="headerlink" title="2.无源文件的新设备"></a>2.无源文件的新设备</h5><p>①添加新设备的ssh key到github账户</p>
-<p><img src="https://raw.githubusercontent.com/QBrer/blog_img/main/img/202310162013087.png"></p>
-<p>②克隆hexo分支下源文件到本地</p>
-<p>③安装所需要的依赖</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo</span><br><span class="line"></span><br><span class="line">npm install</span><br><span class="line"></span><br><span class="line">npm install hexo-deployer-git</span><br></pre></td></tr></table></figure>
-
-<p>④修改编写博客</p>
-<p>⑤部署到页面上</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line"></span><br><span class="line">hexo g</span><br><span class="line"></span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-
-<p>⑤推送</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git add . </span><br><span class="line"></span><br><span class="line">git commit –m add_branch </span><br><span class="line"></span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
-
-<h5 id="3-换设备编写时"><a href="#3-换设备编写时" class="headerlink" title="3.换设备编写时"></a>3.换设备编写时</h5><p>①git pull合并更新</p>
-<p>②修改编写博客并部署到页面上</p>
-<p>③推送</p>
-<p>————————————2025.6</p>
-<p>1.git hexo分支</p>
-<p>2.删掉除.git外的所有文件</p>
-<p>3.将master分支中除.git外的所有文件复制过来</p>
-<p>4.推送 git add . git commit git push</p>
-<p>5.hexo g hexo d</p>
+<p><strong>核心内容</strong></p>
+<p>视频的核心内容是解释 C++ 程序从源代码到可执行文件的过程中，“链接”这一步骤的作用以及常见的链接错误和解决方法。</p>
+<ul>
+<li><strong>什么是链接？</strong> [<a target="_blank" rel="noopener" href="http://www.youtube.com/watch?v=H4s55GgAg0I&t=4">00:04</a>] 链接是在编译之后的一个步骤，它的主要任务是找到程序中所有被称为“符号”的东西（比如函数或变量）的位置，并将它们连接起来，最终生成一个可执行文件 [<a target="_blank" rel="noopener" href="http://www.youtube.com/watch?v=H4s55GgAg0I&t=21">00:21</a>]。即使是只有一个文件的简单程序，也需要链接器来找到程序的入口点（<code>main</code> 函数），这样程序才能开始运行 [<a target="_blank" rel="noopener" href="http://www.youtube.com/watch?v=H4s55GgAg0I&t=52">00:52</a>]。</li>
+<li><strong>编译和链接的区别</strong> [<a target="_blank" rel="noopener" href="http://www.youtube.com/watch?v=H4s55GgAg0I&t=97">01:37</a>]<ul>
+<li><strong>编译</strong>是将源代码转换成机器码，主要关注语法是否正确。编译错误通常以 “C” 开头 [<a target="_blank" rel="noopener" href="http://www.youtube.com/watch?v=H4s55GgAg0I&t=151">02:31</a>]。</li>
+<li><strong>链接</strong>是将编译后生成的各个部分组合起来。链接错误通常以 “LNK” 开头 [<a target="_blank" rel="noopener" href="http://www.youtube.com/watch?v=H4s55GgAg0I&t=170">02:50</a>]。</li>
+</ul>
+</li>
+</ul>
+<p><strong>常见的链接错误及解决方法</strong></p>
+<ol>
+<li><strong>未解析的外部符号 (Unresolved External Symbol)</strong> [<a target="_blank" rel="noopener" href="http://www.youtube.com/watch?v=H4s55GgAg0I&t=347">05:47</a>]<ul>
+<li><strong>原因</strong>：当代码中调用了一个函数，但链接器找不到这个函数的具体实现时，就会报这个错。这可能是因为函数名写错了，或者忘记将实现该函数的 <code>.cpp</code> 文件加入到项目中 [<a target="_blank" rel="noopener" href="http://www.youtube.com/watch?v=H4s55GgAg0I&t=353">05:53</a>]。</li>
+<li><strong>注意</strong>：函数的<strong>签名</strong>（返回类型、函数名和参数）必须完全匹配，否则链接器也会认为它们是不同的函数 [<a target="_blank" rel="noopener" href="http://www.youtube.com/watch?v=H4s55GgAg0I&t=506">08:26</a>]。</li>
+</ul>
+</li>
+<li><strong>符号重复定义 (Duplicate Symbol)</strong> [<a target="_blank" rel="noopener" href="http://www.youtube.com/watch?v=H4s55GgAg0I&t=585">09:45</a>]<ul>
+<li><strong>原因</strong>：当同一个函数或变量有多个定义时，链接器就不知道该使用哪一个。一个常见的原因是在头文件（<code>.h</code> 文件）中直接定义了函数，然后这个头文件又被多个 <code>.cpp</code> 文件包含，导致每个 <code>.cpp</code> 文件都生成了一个函数定义 [<a target="_blank" rel="noopener" href="http://www.youtube.com/watch?v=H4s55GgAg0I&t=738">12:18</a>]。</li>
+<li><strong>解决方法</strong>：<ul>
+<li>使用 <code>static</code> 关键字，将函数的作用域限制在当前文件内 [<a target="_blank" rel="noopener" href="http://www.youtube.com/watch?v=H4s55GgAg0I&t=784">13:04</a>]。</li>
+<li>使用 <code>inline</code> 关键字，让函数在被调用的地方展开，避免生成重复的符号 [<a target="_blank" rel="noopener" href="http://www.youtube.com/watch?v=H4s55GgAg0I&t=810">13:30</a>]。</li>
+<li><strong>最佳实践</strong>：遵循“声明在头文件，定义在源文件”的原则。也就是说，在 <code>.h</code> 文件中只写函数的声明，在 <code>.cpp</code> 文件中写函数的具体实现 [<a target="_blank" rel="noopener" href="http://www.youtube.com/watch?v=H4s55GgAg0I&t=833">13:53</a>]。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>缺少入口点 (Missing Entry Point)</strong> [<a target="_blank" rel="noopener" href="http://www.youtube.com/watch?v=H4s55GgAg0I&t=192">03:12</a>]<ul>
+<li><strong>原因</strong>：当程序被设置为生成一个可执行文件（<code>.exe</code>），但链接器找不到 <code>main</code> 函数时，就会发生这个错误。</li>
+</ul>
+</li>
+</ol>
 
         
       </div>
@@ -400,25 +386,25 @@
 <nav id="article-nav">
   <a class="article-nav-btn left "
     
-      href="/2023/10/16/picgo-github%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BA%8A/"
-      title="picgo+github创建图床并在typora上使用"
+      href="/2025/07/20/%E8%AF%AD%E6%96%99%E5%BA%93%E5%BB%BA%E8%AE%BE%E5%AE%9E%E4%BE%8B/"
+      title="语料库建设实例"
      >
     <i class="fa-solid fa-angle-left"></i>
     <p class="title-text">
       
-        picgo+github创建图床并在typora上使用
+        语料库建设实例
         
     </p>
   </a>
   <a class="article-nav-btn right "
     
-      href="/2023/10/11/vue-mysql%E5%AE%9E%E7%8E%B0%E7%AE%80%E5%8D%95%E7%9A%84%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/"
-      title="vue+远程mysql数据库实现简单的增删改查"
+      href="/2024/05/14/%E5%9F%BA%E4%BA%8E%E5%9B%BE%E5%83%8F%E5%88%86%E5%89%B2%E7%9A%84%E5%9C%9F%E5%A3%A4%E9%87%87%E6%A0%B7%EF%BC%88%E4%BA%8C%EF%BC%89/"
+      title="基于局部异质性的土壤采样（二）"
      >
 
     <p class="title-text">
       
-        vue+远程mysql数据库实现简单的增删改查
+        基于局部异质性的土壤采样（二）
         
     </p>
     <i class="fa-solid fa-angle-right"></i>
