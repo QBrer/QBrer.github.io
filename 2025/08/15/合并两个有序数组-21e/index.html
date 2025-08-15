@@ -11,13 +11,17 @@
   <meta charset="utf-8">
   
   
-  <title>归档: 2025 | QBrer的烂笔头</title>
+  <title>合并两个有序数组-21e | QBrer的烂笔头</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="QBrer的烂笔头">
-<meta property="og:url" content="https://qbrer.github.io/archives/2025/index.html">
+  <meta name="description" content="123456789101112131415161718192021&#x2F;&#x2F;合并两个有序数组var merge &#x3D; function(nums1, m, nums2, n) &amp;#123;    &#x2F;&#x2F; 从索引 m 开始删除 nums1 中多余的元素，并将 nums2 中的元素插入到该位置    nums1.splice(m, nums1.length - m, ...nums2);    &#x2F;&#x2F; con">
+<meta property="og:type" content="article">
+<meta property="og:title" content="合并两个有序数组-21e">
+<meta property="og:url" content="https://qbrer.github.io/2025/08/15/%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84-21e/index.html">
 <meta property="og:site_name" content="QBrer的烂笔头">
+<meta property="og:description" content="123456789101112131415161718192021&#x2F;&#x2F;合并两个有序数组var merge &#x3D; function(nums1, m, nums2, n) &amp;#123;    &#x2F;&#x2F; 从索引 m 开始删除 nums1 中多余的元素，并将 nums2 中的元素插入到该位置    nums1.splice(m, nums1.length - m, ...nums2);    &#x2F;&#x2F; con">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-08-15T15:48:32.000Z">
+<meta property="article:modified_time" content="2025-08-15T15:56:33.052Z">
 <meta property="article:author" content="QBrer">
 <meta name="twitter:card" content="summary">
   
@@ -290,82 +294,101 @@
     <div id="content-body">
        
 
-<div class="archive-main-card">
-    <div class="archive-top">
-      <div class="main-title-bar">
-        <div class="main-title-dot"></div>
-        <h1 class="article-title">Archive</h1>
-      </div>    
+<article id="post-合并两个有序数组-21e" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+    
+   
+  <div class="article-inner">
+    <div class="article-main">
+      <header class="article-header">
+        
+<div class="main-title-bar">
+  <div class="main-title-dot"></div>
+  
+    
+      <h1 class="p-name article-title" itemprop="headline name">
+        合并两个有序数组-21e
+      </h1>
+    
+  
+</div>
+
+        <div class='meta-info-bar'>
+          <div class="meta-info">
+  <time class="dt-published" datetime="2025-08-15T15:48:32.000Z" itemprop="datePublished">2025-08-15</time>
+</div>
+          <div class="need-seperator meta-info">
+            <div class="meta-cate-flex">
+  
+    未分类 
+   
+</div>
+  
+          </div>
+          <div class="wordcount need-seperator meta-info">
+            127 词 
+          </div>
+        </div>
+        
+      </header>
+      <div class="e-content article-entry" itemprop="articleBody">
+        
+          <span id="more"></span>
+
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//合并两个有序数组</span></span><br><span class="line"><span class="keyword">var</span> merge = <span class="keyword">function</span>(<span class="params">nums1, m, nums2, n</span>) &#123;</span><br><span class="line">    <span class="comment">// 从索引 m 开始删除 nums1 中多余的元素，并将 nums2 中的元素插入到该位置</span></span><br><span class="line">    nums1.<span class="title function_">splice</span>(m, nums1.<span class="property">length</span> - m, ...nums2);</span><br><span class="line">    <span class="comment">// console.log(...nums2)</span></span><br><span class="line">    <span class="comment">// console.log(nums1)</span></span><br><span class="line">    <span class="comment">// 对合并后的数组进行排序</span></span><br><span class="line">    nums1.<span class="title function_">sort</span>(<span class="function">(<span class="params">a, b</span>) =&gt;</span> a - b);</span><br><span class="line">    <span class="keyword">return</span> nums1;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义 nums1、m、nums2 和 n 的值</span></span><br><span class="line"><span class="keyword">let</span> nums1 = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>];</span><br><span class="line"><span class="keyword">let</span> m = <span class="number">3</span>;</span><br><span class="line"><span class="keyword">let</span> nums2 = [<span class="number">2</span>, <span class="number">5</span>, <span class="number">6</span>];</span><br><span class="line"><span class="keyword">let</span> n = <span class="number">3</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 调用 merge 函数</span></span><br><span class="line"><span class="title function_">merge</span>(nums1, m, nums2, n);</span><br><span class="line"><span class="comment">// 打印合并并排序后的 nums1 数组</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(nums1);</span><br></pre></td></tr></table></figure>
+
+
+        
+      </div>
+
+         
     </div>
     
-    
-      
-      
-        
-        <div class="year-line">
-            <div class="year-num">2025</div>
-            <div class="dot-wrapper">
-                <div class="dot"></div>
-            </div>
-            <div class="article-count">3 篇文章</div>
-        </div>
-      
-      <a class="archive-article-link" href="/2025/08/15/%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84-21e/" title="合并两个有序数组-21e">
-        <div class="date">08-15</div>
-        <div class="line">
-            <div class="dot"></div>
-        </div>
-        <div class="title">
-            <div class="title-inner">
-                
-                    合并两个有序数组-21e
-                
-            </div>
-        </div>
-        <div class="tags">
-            
-        </div>
-      </a>
-    
-      
-      
-      <a class="archive-article-link" href="/2025/08/05/python-%E5%A4%96%E6%98%9F%E4%BA%BA%E5%85%A5%E4%BE%B5/" title="python-外星人入侵">
-        <div class="date">08-05</div>
-        <div class="line">
-            <div class="dot"></div>
-        </div>
-        <div class="title">
-            <div class="title-inner">
-                
-                    python-外星人入侵
-                
-            </div>
-        </div>
-        <div class="tags">
-            #Python
-        </div>
-      </a>
-    
-      
-      
-      <a class="archive-article-link" href="/2025/07/24/AI-Ready%E6%95%B0%E6%8D%AE/" title="AI-Ready数据">
-        <div class="date">07-24</div>
-        <div class="line">
-            <div class="dot"></div>
-        </div>
-        <div class="title">
-            <div class="title-inner">
-                
-                    AI-Ready数据
-                
-            </div>
-        </div>
-        <div class="tags">
-            
-        </div>
-      </a>
-    
+     
   </div>
+  
+    
+<nav id="article-nav">
+  <a class="article-nav-btn left  disabled "
+     >
+    <i class="fa-solid fa-angle-left"></i>
+    <p class="title-text">
+        
+    </p>
+  </a>
+  <a class="article-nav-btn right "
+    
+      href="/2025/08/05/python-%E5%A4%96%E6%98%9F%E4%BA%BA%E5%85%A5%E4%BE%B5/"
+      title="python-外星人入侵"
+     >
+
+    <p class="title-text">
+      
+        python-外星人入侵
+        
+    </p>
+    <i class="fa-solid fa-angle-right"></i>
+  </a>
+</nav>
+
+
+  
+</article>
+
+
+  
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  <div id="comment-card" class="comment-card">
+    <div class="main-title-bar">
+      <div class="main-title-dot"></div>
+      <div class="main-title">留言 </div>
+    </div>
+    <div id="vcomments"></div>
+  </div>
+  <script>
+      new Valine({"enable":"ture","enableQQ":false,"enableOS":false,"appId":"XiigNuiC5qAEMsvXgA4CZRdS-MdYXbMMI","appKey":"onmZNb4nJ2EpQ4jTIGroP5t5","placeholder":"暂未配置邮件提醒，不能及时回复还请见谅😥","pageSize":10,"highlight":true,"serverURLs":"https://api.b.qbrer.me","emojiCDN":"https://cdn.jsdelivr.net/gh/QBrer/Tieba-lulu-emoji/","emojiMaps":{"Tieba1":"Tieba/1f44d.png","Tieba2":"Tieba/1f603.png","Tieba3":"Tieba/1f605.png","Tieba4":"Tieba/1f606.png","Tieba5":"Tieba/1f608.png","Tieba6":"Tieba/1f609.png","Tieba7":"Tieba/1f60b.png","Tieba8":"Tieba/1f60d.png","Tieba9":"Tieba/1f60e.png","Tieba10":"Tieba/1f60f.png","Tieba11":"Tieba/1f610.png","Tieba12":"Tieba/1f612.png","Tieba13":"Tieba/1f613.png","Tieba14":"Tieba/1f615.png","Tieba15":"Tieba/1f621.png","Tieba16":"Tieba/1f626.png","Tieba17":"Tieba/1f62d.png","Tieba18":"Tieba/1f630.png","Tieba19":"Tieba/1f633.png","Tieba20":"Tieba/1f634.png","Tieba21":"Tieba/1f642.png","Tieba22":"Tieba/1f911.png","Tieba23":"Tieba/1f923.png","Tieba24":"Tieba/1f928.png","Tieba25":"Tieba/1f92c.png","Tieba26":"Tieba/1f92e.png","Tieba27":"Tieba/1f97a.png","Tieba28":"Tieba/2639.png","Tieba29":"Tieba/263a.png","lulu1":"lulu/45aafb6134a85edf3bffc8f40c540923dc547517.png","lulu2":"lulu/75cf33eff01f3a2982bbe319dc25bc315d607c17.png","lulu3":"lulu/a1ilj-u86wo.png","lulu4":"lulu/a10ua-1ya8i.gif","lulu5":"lulu/a3fpb-23in1.gif","lulu6":"lulu/a3t3r-bki8d.gif","lulu7":"lulu/a6co8-kghbl.gif","lulu8":"lulu/ac51e-a5f2y.gif","lulu9":"lulu/acq6j-w9acj.gif","lulu10":"lulu/acr5g-11jw4.gif","lulu11":"lulu/afu1m-0wtx4.gif","lulu12":"lulu/ag7iu-yi5n7.gif","lulu13":"lulu/aj9x9-bhe9q.gif","lulu14":"lulu/aktlz-gm54k.gif","lulu15":"lulu/an73b-m5ccp.gif","lulu16":"lulu/ao24h-kk66i.gif","lulu17":"lulu/aoses-mupbp.gif","lulu18":"lulu/atbwe-m11gc.gif","lulu19":"lulu/aw6oc-b1gkv.gif","lulu20":"lulu/aygix-uxuc9.gif"},"el":"#vcomments"});
+  </script>
+ 
     </div>
     <div id="footer-wrapper">
       <footer id="footer">
