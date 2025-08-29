@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+
+
+<html theme="dark" showBanner="true" hasBanner="true" > 
+<link href="/fontawesome/css/fontawesome.css" rel="stylesheet">
+<link href="/fontawesome/css/brands.css" rel="stylesheet">
+<link href="/fontawesome/css/solid.css" rel="stylesheet">
+<script src="/js/color.global.min.js" ></script>
+<script src="/js/load-settings.js" ></script>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>C++链接 | QBrer的烂笔头</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="核心内容 视频的核心内容是解释 C++ 程序从源代码到可执行文件的过程中，“链接”这一步骤的作用以及常见的链接错误和解决方法。  什么是链接？ [00:04] 链接是在编译之后的一个步骤，它的主要任务是找到程序中所有被称为“符号”的东西（比如函数或变量）的位置，并将它们连接起来，最终生成一个可执行文件 [00:21]。即使是只有一个文件的简单程序，也需要链接器来找到程序的入口点（main 函数">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C++链接">
+<meta property="og:url" content="https://qbrer.github.io/2023/10/13/C-%E9%93%BE%E6%8E%A5/index.html">
+<meta property="og:site_name" content="QBrer的烂笔头">
+<meta property="og:description" content="核心内容 视频的核心内容是解释 C++ 程序从源代码到可执行文件的过程中，“链接”这一步骤的作用以及常见的链接错误和解决方法。  什么是链接？ [00:04] 链接是在编译之后的一个步骤，它的主要任务是找到程序中所有被称为“符号”的东西（比如函数或变量）的位置，并将它们连接起来，最终生成一个可执行文件 [00:21]。即使是只有一个文件的简单程序，也需要链接器来找到程序的入口点（main 函数">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-10-13T15:03:36.000Z">
+<meta property="article:modified_time" content="2025-08-15T15:15:26.400Z">
+<meta property="article:author" content="QBrer">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="QBrer的烂笔头" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/someimg/icon.jpg">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  
+  
+    
+<div id="banner" class="">
+  <img src="/someimg/bg11.jpg" itemprop="image">
+  <div id="banner-dim"></div>
+</div>
+ 
+   
+  <div id="main-grid" class="shadow   ">
+    <div id="nav" class=""  >
+      <navbar id="navbar">
+  <nav id="title-nav">
+    <a href="/">
+      <div id="vivia-logo">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+      <div>QBrer的烂笔头 </div>
+    </a>
+  </nav>
+  <nav id="main-nav">
+    
+      <a class="main-nav-link" href="/">主页</a>
+    
+      <a class="main-nav-link" href="/archives">归档</a>
+    
+      <a class="main-nav-link" href="/log">日志</a>
+    
+  </nav>
+  <nav id="sub-nav">
+    <a id="theme-btn" class="nav-icon">
+      <span class="material-symbols-rounded light-mode-icon">wb_sunny</span>
+      <span class="material-symbols-rounded dark-mode-icon">dark_mode</span>
+    </a>
+    
+      <a id="nav-rss-link" class="nav-icon mobile-hide" href="/atom.xml" title="RSS 订阅">
+        <span class="material-symbols-rounded rss">rss_feed</span>
+      </a>
+    
+    <a id="nav-search-btn" class="nav-icon" title="搜索" style="display: none;">
+      <span class="material-symbols-rounded">search</span>
+    </a>
+    <div id="nav-menu-btn" class="nav-icon">
+      <span class="material-symbols-rounded">menu</span>
+    </div>
+  </nav>
+</navbar>
+<div id="nav-dropdown" class="hidden">
+  <div id="dropdown-link-list">
+    
+      <a class="nav-dropdown-link" href="/">主页</a>
+    
+      <a class="nav-dropdown-link" href="/archives">归档</a>
+    
+      <a class="nav-dropdown-link" href="/log">日志</a>
+    
+    
+      <a class="nav-dropdown-link" href="/atom.xml" title="RSS 订阅">RSS</a>
+     
+    </div>
+</div>
+<script>
+  let dropdownBtn = document.getElementById("nav-menu-btn");
+  let dropdownEle = document.getElementById("nav-dropdown");
+  dropdownBtn.onclick = function() {
+    dropdownEle.classList.toggle("hidden");
+  }
+</script>
+    </div>
+    <div id="sidebar-wrapper">
+      <sidebar id="sidebar">
+  
+    <div class="widget-wrap">
+  <div class="info-card">
+    <div class="avatar">
+      
+        <image src=/someimg/piccc.png></image>
+      
+      <div class="img-dim"></div>
+    </div>
+    <div class="info">
+      <div class="username">QBrer </div>
+      <div class="dot"></div>
+      <div class="subtitle">简单记录下我所想 </div>
+      <div class="link-list">
+        
+          <a class="link-btn" target="_blank" rel="noopener" href="https://im.qq.com/index/" title="QQ 3093815036"><i class="fa-brands fa-qq"></i></a>
+        
+          <a class="link-btn" target="_blank" rel="noopener" href="https://mail.qq.com/" title="邮箱 3093815036@qq.com"><i class="fa-solid fa-envelope"></i></a>
+        
+          <a class="link-btn" target="_blank" rel="noopener" href="https://github.com/QBrer" title="GitHub"><i class="fa-brands fa-github"></i></a>
+         
+      </div>  
+    </div>
+  </div>
+</div>
+
+  
+  <div class="sticky">
+    
+      
+
+
+  <div class="widget-wrap">
+    <div class="widget">
+      <h3 class="widget-title">分类</h3>
+      <div class="category-box">
+            <a class="category-link" href="/categories/%E7%BC%96%E7%A8%8B/">
+                编程
+                <div class="category-count">1</div>
+            </a>
+        </div>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap">
+    <div class="widget">
+      <h3 class="widget-title">标签</h3>
+      <ul class="widget-tag-list" itemprop="keywords"><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/LeanCloud/" rel="tag">LeanCloud</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/LeetCode/" rel="tag">LeetCode</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/Valine/" rel="tag">Valine</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/arcgis/" rel="tag">arcgis</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/envi/" rel="tag">envi</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/github/" rel="tag">github</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/mysql/" rel="tag">mysql</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/vue/" rel="tag">vue</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/%E5%9B%BE%E5%BA%8A/" rel="tag">图床</a></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap">
+    <div class="widget">
+      <h3 class="widget-title">归档</h3>
+      
+      
+        <a class="archive-link" href="/archives/2025/08 ">
+          八月 2025 
+          <div class="archive-count">2 </div>
+        </a>
+      
+        <a class="archive-link" href="/archives/2025/07 ">
+          七月 2025 
+          <div class="archive-count">1 </div>
+        </a>
+      
+        <a class="archive-link" href="/archives/2024/05 ">
+          五月 2024 
+          <div class="archive-count">1 </div>
+        </a>
+      
+        <a class="archive-link" href="/archives/2024/03 ">
+          三月 2024 
+          <div class="archive-count">1 </div>
+        </a>
+      
+        <a class="archive-link" href="/archives/2024/02 ">
+          二月 2024 
+          <div class="archive-count">1 </div>
+        </a>
+      
+        <a class="archive-link" href="/archives/2023/12 ">
+          十二月 2023 
+          <div class="archive-count">1 </div>
+        </a>
+      
+        <a class="archive-link" href="/archives/2023/11 ">
+          十一月 2023 
+          <div class="archive-count">2 </div>
+        </a>
+      
+        <a class="archive-link" href="/archives/2023/10 ">
+          十月 2023 
+          <div class="archive-count">4 </div>
+        </a>
+      
+        <a class="archive-link" href="/archives/2023/08 ">
+          八月 2023 
+          <div class="archive-count">2 </div>
+        </a>
+      
+        <a class="archive-link" href="/archives/2023/07 ">
+          七月 2023 
+          <div class="archive-count">2 </div>
+        </a>
+      
+        <a class="archive-link" href="/archives/2023/06 ">
+          六月 2023 
+          <div class="archive-count">1 </div>
+        </a>
+      
+        <a class="archive-link" href="/archives/2022/12 ">
+          十二月 2022 
+          <div class="archive-count">1 </div>
+        </a>
+      
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap">
+    <div class="widget">
+      <h3 class="widget-title">最新文章</h3>
+      <ul>
+        
+          <a class="recent-link" href="/2025/08/15/%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84-21e/" title="合并两个有序数组-21e" >
+            <div class="recent-link-text">
+              合并两个有序数组-21e
+            </div>
+          </a>
+        
+          <a class="recent-link" href="/2025/08/05/python-%E5%A4%96%E6%98%9F%E4%BA%BA%E5%85%A5%E4%BE%B5/" title="python-外星人入侵" >
+            <div class="recent-link-text">
+              python-外星人入侵
+            </div>
+          </a>
+        
+          <a class="recent-link" href="/2025/07/24/AI-Ready%E6%95%B0%E6%8D%AE/" title="AI-Ready数据" >
+            <div class="recent-link-text">
+              AI-Ready数据
+            </div>
+          </a>
+        
+          <a class="recent-link" href="/2024/05/14/%E5%9F%BA%E4%BA%8E%E5%9B%BE%E5%83%8F%E5%88%86%E5%89%B2%E7%9A%84%E5%9C%9F%E5%A3%A4%E9%87%87%E6%A0%B7%EF%BC%88%E4%BA%8C%EF%BC%89/" title="基于局部异质性的土壤采样（二）" >
+            <div class="recent-link-text">
+              基于局部异质性的土壤采样（二）
+            </div>
+          </a>
+        
+          <a class="recent-link" href="/2024/03/12/%E5%9F%BA%E4%BA%8E%E5%9B%BE%E5%83%8F%E5%88%86%E5%89%B2%E7%9A%84%E5%9C%9F%E5%A3%A4%E9%87%87%E6%A0%B7%EF%BC%88%E4%B8%80%EF%BC%89/" title="基于局部异质性的土壤采样（一）" >
+            <div class="recent-link-text">
+              基于局部异质性的土壤采样（一）
+            </div>
+          </a>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+  </div>
+</sidebar>
+    </div>
+    <div id="content-body">
+       
+
+<article id="post-C-链接" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+    
+   
+  <div class="article-inner">
+    <div class="article-main">
+      <header class="article-header">
+        
+<div class="main-title-bar">
+  <div class="main-title-dot"></div>
+  
+    
+      <h1 class="p-name article-title" itemprop="headline name">
+        C++链接
+      </h1>
+    
+  
+</div>
+
+        <div class='meta-info-bar'>
+          <div class="meta-info">
+  <time class="dt-published" datetime="2023-10-13T15:03:36.000Z" itemprop="datePublished">2023-10-13</time>
+</div>
+          <div class="need-seperator meta-info">
+            <div class="meta-cate-flex">
+  
+    未分类 
+   
+</div>
+  
+          </div>
+          <div class="wordcount need-seperator meta-info">
+            641 词 
+          </div>
+        </div>
+        
+      </header>
+      <div class="e-content article-entry" itemprop="articleBody">
+        
+          <span id="more"></span>
+
+<p><strong>核心内容</strong></p>
+<p>视频的核心内容是解释 C++ 程序从源代码到可执行文件的过程中，“链接”这一步骤的作用以及常见的链接错误和解决方法。</p>
+<ul>
+<li><strong>什么是链接？</strong> [<a target="_blank" rel="noopener" href="http://www.youtube.com/watch?v=H4s55GgAg0I&t=4">00:04</a>] 链接是在编译之后的一个步骤，它的主要任务是找到程序中所有被称为“符号”的东西（比如函数或变量）的位置，并将它们连接起来，最终生成一个可执行文件 [<a target="_blank" rel="noopener" href="http://www.youtube.com/watch?v=H4s55GgAg0I&t=21">00:21</a>]。即使是只有一个文件的简单程序，也需要链接器来找到程序的入口点（<code>main</code> 函数），这样程序才能开始运行 [<a target="_blank" rel="noopener" href="http://www.youtube.com/watch?v=H4s55GgAg0I&t=52">00:52</a>]。</li>
+<li><strong>编译和链接的区别</strong> [<a target="_blank" rel="noopener" href="http://www.youtube.com/watch?v=H4s55GgAg0I&t=97">01:37</a>]<ul>
+<li><strong>编译</strong>是将源代码转换成机器码，主要关注语法是否正确。编译错误通常以 “C” 开头 [<a target="_blank" rel="noopener" href="http://www.youtube.com/watch?v=H4s55GgAg0I&t=151">02:31</a>]。</li>
+<li><strong>链接</strong>是将编译后生成的各个部分组合起来。链接错误通常以 “LNK” 开头 [<a target="_blank" rel="noopener" href="http://www.youtube.com/watch?v=H4s55GgAg0I&t=170">02:50</a>]。</li>
+</ul>
+</li>
+</ul>
+<p><strong>常见的链接错误及解决方法</strong></p>
+<ol>
+<li><strong>未解析的外部符号 (Unresolved External Symbol)</strong> [<a target="_blank" rel="noopener" href="http://www.youtube.com/watch?v=H4s55GgAg0I&t=347">05:47</a>]<ul>
+<li><strong>原因</strong>：当代码中调用了一个函数，但链接器找不到这个函数的具体实现时，就会报这个错。这可能是因为函数名写错了，或者忘记将实现该函数的 <code>.cpp</code> 文件加入到项目中 [<a target="_blank" rel="noopener" href="http://www.youtube.com/watch?v=H4s55GgAg0I&t=353">05:53</a>]。</li>
+<li><strong>注意</strong>：函数的<strong>签名</strong>（返回类型、函数名和参数）必须完全匹配，否则链接器也会认为它们是不同的函数 [<a target="_blank" rel="noopener" href="http://www.youtube.com/watch?v=H4s55GgAg0I&t=506">08:26</a>]。</li>
+</ul>
+</li>
+<li><strong>符号重复定义 (Duplicate Symbol)</strong> [<a target="_blank" rel="noopener" href="http://www.youtube.com/watch?v=H4s55GgAg0I&t=585">09:45</a>]<ul>
+<li><strong>原因</strong>：当同一个函数或变量有多个定义时，链接器就不知道该使用哪一个。一个常见的原因是在头文件（<code>.h</code> 文件）中直接定义了函数，然后这个头文件又被多个 <code>.cpp</code> 文件包含，导致每个 <code>.cpp</code> 文件都生成了一个函数定义 [<a target="_blank" rel="noopener" href="http://www.youtube.com/watch?v=H4s55GgAg0I&t=738">12:18</a>]。</li>
+<li><strong>解决方法</strong>：<ul>
+<li>使用 <code>static</code> 关键字，将函数的作用域限制在当前文件内 [<a target="_blank" rel="noopener" href="http://www.youtube.com/watch?v=H4s55GgAg0I&t=784">13:04</a>]。</li>
+<li>使用 <code>inline</code> 关键字，让函数在被调用的地方展开，避免生成重复的符号 [<a target="_blank" rel="noopener" href="http://www.youtube.com/watch?v=H4s55GgAg0I&t=810">13:30</a>]。</li>
+<li><strong>最佳实践</strong>：遵循“声明在头文件，定义在源文件”的原则。也就是说，在 <code>.h</code> 文件中只写函数的声明，在 <code>.cpp</code> 文件中写函数的具体实现 [<a target="_blank" rel="noopener" href="http://www.youtube.com/watch?v=H4s55GgAg0I&t=833">13:53</a>]。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>缺少入口点 (Missing Entry Point)</strong> [<a target="_blank" rel="noopener" href="http://www.youtube.com/watch?v=H4s55GgAg0I&t=192">03:12</a>]<ul>
+<li><strong>原因</strong>：当程序被设置为生成一个可执行文件（<code>.exe</code>），但链接器找不到 <code>main</code> 函数时，就会发生这个错误。</li>
+</ul>
+</li>
+</ol>
+
+        
+      </div>
+
+         
+    </div>
+    
+     
+  </div>
+  
+    
+<nav id="article-nav">
+  <a class="article-nav-btn left "
+    
+      href="/2023/10/16/picgo-github%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BA%8A/"
+      title="picgo+github创建图床并在typora上使用"
+     >
+    <i class="fa-solid fa-angle-left"></i>
+    <p class="title-text">
+      
+        picgo+github创建图床并在typora上使用
+        
+    </p>
+  </a>
+  <a class="article-nav-btn right "
+    
+      href="/2023/10/12/hexo%E5%A4%9A%E8%AE%BE%E5%A4%87%E5%90%8C%E6%AD%A5%E6%9B%B4%E6%96%B0/"
+      title="hexo多设备同步更新"
+     >
+
+    <p class="title-text">
+      
+        hexo多设备同步更新
+        
+    </p>
+    <i class="fa-solid fa-angle-right"></i>
+  </a>
+</nav>
+
+
+  
+</article>
+
+
+  
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  <div id="comment-card" class="comment-card">
+    <div class="main-title-bar">
+      <div class="main-title-dot"></div>
+      <div class="main-title">留言 </div>
+    </div>
+    <div id="vcomments"></div>
+  </div>
+  <script>
+      new Valine({"enable":"ture","enableQQ":false,"enableOS":false,"appId":"XiigNuiC5qAEMsvXgA4CZRdS-MdYXbMMI","appKey":"onmZNb4nJ2EpQ4jTIGroP5t5","placeholder":"暂未配置邮件提醒，不能及时回复还请见谅😥","pageSize":10,"highlight":true,"serverURLs":"https://api.b.qbrer.me","emojiCDN":"https://cdn.jsdelivr.net/gh/QBrer/Tieba-lulu-emoji/","emojiMaps":{"Tieba1":"Tieba/1f44d.png","Tieba2":"Tieba/1f603.png","Tieba3":"Tieba/1f605.png","Tieba4":"Tieba/1f606.png","Tieba5":"Tieba/1f608.png","Tieba6":"Tieba/1f609.png","Tieba7":"Tieba/1f60b.png","Tieba8":"Tieba/1f60d.png","Tieba9":"Tieba/1f60e.png","Tieba10":"Tieba/1f60f.png","Tieba11":"Tieba/1f610.png","Tieba12":"Tieba/1f612.png","Tieba13":"Tieba/1f613.png","Tieba14":"Tieba/1f615.png","Tieba15":"Tieba/1f621.png","Tieba16":"Tieba/1f626.png","Tieba17":"Tieba/1f62d.png","Tieba18":"Tieba/1f630.png","Tieba19":"Tieba/1f633.png","Tieba20":"Tieba/1f634.png","Tieba21":"Tieba/1f642.png","Tieba22":"Tieba/1f911.png","Tieba23":"Tieba/1f923.png","Tieba24":"Tieba/1f928.png","Tieba25":"Tieba/1f92c.png","Tieba26":"Tieba/1f92e.png","Tieba27":"Tieba/1f97a.png","Tieba28":"Tieba/2639.png","Tieba29":"Tieba/263a.png","lulu1":"lulu/45aafb6134a85edf3bffc8f40c540923dc547517.png","lulu2":"lulu/75cf33eff01f3a2982bbe319dc25bc315d607c17.png","lulu3":"lulu/a1ilj-u86wo.png","lulu4":"lulu/a10ua-1ya8i.gif","lulu5":"lulu/a3fpb-23in1.gif","lulu6":"lulu/a3t3r-bki8d.gif","lulu7":"lulu/a6co8-kghbl.gif","lulu8":"lulu/ac51e-a5f2y.gif","lulu9":"lulu/acq6j-w9acj.gif","lulu10":"lulu/acr5g-11jw4.gif","lulu11":"lulu/afu1m-0wtx4.gif","lulu12":"lulu/ag7iu-yi5n7.gif","lulu13":"lulu/aj9x9-bhe9q.gif","lulu14":"lulu/aktlz-gm54k.gif","lulu15":"lulu/an73b-m5ccp.gif","lulu16":"lulu/ao24h-kk66i.gif","lulu17":"lulu/aoses-mupbp.gif","lulu18":"lulu/atbwe-m11gc.gif","lulu19":"lulu/aw6oc-b1gkv.gif","lulu20":"lulu/aygix-uxuc9.gif"},"el":"#vcomments"});
+  </script>
+ 
+    </div>
+    <div id="footer-wrapper">
+      <footer id="footer">
+  
+  <div id="footer-info" class="inner">
+    
+    &copy; 2025 QBrer<br>
+    Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & Theme <a target="_blank" rel="noopener" href="https://github.com/saicaca/hexo-theme-vivia">Vivia</a>
+  </div>
+</footer>
+
+    </div>
+    <div class="back-to-top-wrapper">
+    <button id="back-to-top-btn" class="back-to-top-btn" onclick="topFunction()">
+        <span class="material-symbols-rounded">keyboard_arrow_up</span>
+    </button>
+</div>
+
+<script>
+    function topFunction() {
+        window.scroll({ top: 0, behavior: 'smooth' });
+    }
+    let btn = document.getElementById('back-to-top-btn');
+    function scrollFunction() {
+        if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+            btn.style.opacity = 1;
+        } else {
+            btn.style.opacity = 0;
+        }
+    }
+    window.onscroll = function() {
+        scrollFunction();
+    }
+</script>
+
+  </div>
+  <script src="/js/light-dark-switch.js"></script>
+</body>
+</html>
