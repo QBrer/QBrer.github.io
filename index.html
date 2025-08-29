@@ -321,7 +321,7 @@
   
           </div>
           <div class="wordcount need-seperator meta-info">
-            84 词 
+            100 词 
           </div>
         </div>
         
@@ -334,7 +334,7 @@
             
 
 依旧双指针
-12345678910111213141516171819202122232425#include &lt;iostream&gt;#include &lt;vector&gt;void moveZeroes(std::vector&lt;int&gt;&amp; nums) &#123;	int left = 0;	int right = 0;	while (right &lt; nums.size()) &#123;		if (nums[right]) &#123;			int x = nums[left];			nums[left] = nums[right];			nums[right] = x;			right++;			left++;		&#125;		else right++;	&#125;&#125;;int main() &#123;	std::vector&lt;int&gt; nums = &#123; 0,1,0,3,12 &#125;;	moveZeroes(nums);	for (int num : nums) &#123;		std:...  
+1234567891011121314151617181920212223242526#include &lt;iostream&gt;#include &lt;vector&gt;void moveZeroes(std::vector&lt;int&gt;&amp; nums) &#123;	int left = 0;	int right = 0;	while (right &lt; nums.size()) &#123;        //当右指针不为零时与左指针互换元素		if (nums[right]) &#123;			int x = nums[left];			nums[left] = nums[right];			nums[right] = x;			right++;			left++;		&#125;		else right++;	&#125;&#125;;int main() &#123;	std::vector&lt;int&gt; nums = &#123; 0,1,0,3,12 &#125;;	moveZeroes(nums);	for (...  
           </div>
         
       </div>
@@ -390,7 +390,7 @@
   
           </div>
           <div class="wordcount need-seperator meta-info">
-            270 词 
+            136 词 
           </div>
         </div>
         
@@ -402,9 +402,8 @@
           <div class="truncate-text">
             
 
-1234567891011121314151617181920//合并两个有序数组var merge = function(nums1, m, nums2, n) &#123;    // 从索引 m 开始删除 nums1 中多余的元素，并将 nums2 中的元素插入到该位置    nums1.splice(m, nums1.length - m, ...nums2);    // console.log(...nums2)    // console.log(nums1)    // 对合并后的数组进行排序    nums1.sort((a, b) =&gt; a - b);    return nums1;&#125;;// 定义 nums1、m、nums2 和 n 的值let nums1 = [1, 2, 3, 0, 0, 0];let m = 3;let nums2 = [2, 5, 6];let n = 3;merge(nums1, m, nums2, n);console.log(nums1);
-
-其性能瓶颈在于 sort，时间复杂度为 O((m+n)log(m+...  
+效率更高的方法是使用双指针，时间复杂度为 O(m+n)
+123456789101112131415class Solution &#123;public:    void merge(vector&lt;int&gt;&amp; nums1, int m, vector&lt;int&gt;&amp; nums2, int n) &#123;        int sum = m+n-1;        int i = m-1;        int j = n-1;        //当两数组均含有未合并元素时        while(i &gt;= 0 &amp;&amp; j &gt;= 0)&#123;            if(nums1[i] &gt;= nums2[j]) nums1[sum] = nums1[i], sum--, i--;            else nums1[sum] = nums2[j], sum--, j--;        &#125;        //若nums2还有未合并元素，则全部加入结果        while(j...  
           </div>
         
       </div>
