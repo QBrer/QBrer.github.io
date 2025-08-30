@@ -321,7 +321,7 @@
   
           </div>
           <div class="wordcount need-seperator meta-info">
-            54 词 
+            63 词 
           </div>
         </div>
         
@@ -336,6 +336,7 @@
 标准解法是二分法，但这样子提交也给过了，其时间复杂度为 O(n)
 1234567891011class Solution &#123;public:    int hIndex(vector&lt;int&gt;&amp; citations) &#123;        for(int i = 0; i &lt; citations.size(); i++)&#123;            if (citations[i] &gt;= citations.size()-i)&#123;                return citations.size()-i;            &#125;        &#125;        return 0;    &#125;&#125;;
 
+力扣：https://leetcode.cn/problems/h-index-ii/description/
   
           </div>
         
